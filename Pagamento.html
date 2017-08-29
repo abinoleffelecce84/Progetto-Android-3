@@ -4,14 +4,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Pagamento</title>
+        <title>Pagamento | Wishcar</title>
         <meta name="description" content="Personal Website">
         <meta name="author" content="io">
 
         <!-- CSS references -->
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/MainPage.css" rel="stylesheet">
-        <link href="css/pagamento.css" rel="stylesheet">
+        <link href="css/Pagamento.css" rel="stylesheet">
 
         <!-- Custom Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -21,180 +21,273 @@
 
     <body id="page-top">
 
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <!-- barrette -->
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand page-scroll" href="Mainpage.html" id="title">Nome dell'azienda</a>
-          </div>
-          <div class="collapse navbar-collapse" id=".navbar-collapse" id="hidden-collapse"> <!-- <== mobile version -->
-            <ul class="nav navbar-nav navbar-right">
-            <!-- title -->
-             <li class="hidden">
-                 <a href="#page-top"></a>
-             </li>
-             <!-- lateral voices -->
-             <li>
-                 <a class="page-scroll" href="Mappa.html">Mappa</a>
-             </li>
-             <li>
-                 <a class="page-scroll" href="Autodisp.html">Auto Disponibili</a>
-             </li>
-             <li>
-                 <a class="page-scroll" href="#featurettes">Servizio</a>
-             </li>
-             <li>
-                 <a class="page-scroll" href="Contattaci.html">Su di Noi</a>
-             </li>
-             <li>
-                 <a class="page-scroll" href="#featurettes">News</a>
-             </li>
-             <li>
-                 <a class="page-scroll" href="#featurettes">Come Funziona</a>
-             </li>
-             <li>
-                 <a class="page-scroll" href="prenota.html">Prenota</a>
-             </li>
-             <li>
-               <form id="qm-form" class="navbar-form" role="search">
-                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Cerca nel sito...">
-                   <div class="input-group-btn">
-                    <button id="btn-check" class="btn btn-default" type="button"></button>
-                   </div>
+         <nav class="navbar navbar-default navbar-fixed-top">
+             <div class="container">
+                 <div class="navbar-header page-scroll">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>                    
+                     </button>
+                     <a class="navbar-brand page-scroll" href="Mainpage.html" id="title">WishCar</a>
                  </div>
-               </form>
-             </li>
-             <li id="dropdown">
-               <div class="dropdown" id="drop">
-                 <button onclick="myFunction()" class="dropbtn"></button>
-                  <div id="myDropdown" class="dropdown-content">
-                    <form class="form" role="search">
-                      <div class="input-group">
-                       <input type="text" class="form-control" placeholder="Cerca nel sito...">
-                       <div class="input-group-btn">
-                         <button id="btn-check" class="btn btn-default" type="button"></button>
-                       </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </li>
-              <li><button id="login" class="btn btn-default" type="button"</li>
-            </ul>
+                 <div class="collapse navbar-collapse" id=".navbar-collapse" id="hidden-collapse">
+                     <ul class="nav navbar-nav navbar-right">
+                         
+                         <li class="hidden">
+                             <a href="#page-top"></a>
+                         </li>
+                         
+                         <li>
+                             <a class="page-scroll" href="Mappa.html">Mappa</a>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="Autodisp.html">Auto Disponibili</a>
+                         </li>
+                         <li id="dropdown-dsk">
+                             <div class="dropdown">
+                                <a class="dropbtn" id="myDrop2" onclick="myFunction2()">Servizio</a>
+                                <font class="row" size="1" id="freccia">&#9699</font>
+                                <div id="myDropdown2" class="dropdown-content-form">
+                                    <div class="input-group">
+                                         <div align="center"><a href="Opinioni.html">Opinioni</a></div>
+                                         <div align="center"><a href="Mainpage.html#Tariffe">Tariffe</a></div>
+                                         <div align="center"><a href="Contattaci.html">Contatti</a></div>
+                                         <div align="center"><a href="HoUnProblema.html">Ho un problema</a></div>
+                                    </div>
+                                </div>
+                             </div>
+                         </li>
+                         <li id="dropdown-mob">
+                            <a id="servizio" href="#">Servizio</a>
+                             <ul>
+                                <li><a id="servizio" href="Opinioni.html">Opinioni</a></li>
+                                <li><a href="Mainpage.html#Tariffe">Tariffe</a></li>
+                                <li><a href="Contattaci.html">Contatti</a></li>
+                                <li><a href="Problema.html">Ho un problema</a></li>
+                             </ul>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="SuDiNoi.html">Su di Noi</a>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="News.html">News</a>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="ComeFunziona.html">Come Funziona</a>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="Prenota.html">Prenota</a>
+                         </li>
+                         <li>
+                             <form id="qm-form" class="navbar-form" role="search">
+                                 <fieldset class="text-left" id="checkbox">
+                                         <legend id="checkbox">Effettua ricerca in:</legend>
+                                         <div class="col-xs-11" id="input-box">
+                                             <input id="input" type="checkbox" name="autodisp"/>
+                                                    Auto Disponibili<br>
+                                             <input id="input" type="checkbox" name="mappa"/>
+                                                    Mappa<br>
+                                             <input id="input" type="checkbox" name="news"/>
+                                                    News<br>
+                                             <input id="input" type="checkbox" name="contatti"/>
+                                                    Contatti<br>
+                                         </div>
+                                 </fieldset>
+                                 <div id="searching-xs" class="input-group">
+                                   <input type="text" class="form-control" placeholder="Cerca nel sito...">
+                                   <div class="input-group-btn">
+                                     <a href="Cerca.html">
+                                        <button id="btn-check" class="btn btn-default" type="button"></button>
+                                     </a>
+                                   </div>
+                                 </div>
+                             </form>
+                         </li>
+                         <li id="dropdown">
+                             <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn" id="myDrop"></button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <form class="form" role="search">
+                                        <input type="text" id="searching" name="password" type="text" placeholder="Cerca nel sito..." class="form-control">
+                                        <div class="input-group">
+                                           <a class="col-xs-1" href="Cerca.html">
+                                              <button id="btn-vai" class="btn btn-default" type="button">Vai</button>
+                                           </a>
+                                        </div>
+                                    </form>
+                                    <fieldset class="text-left" id="checkbox">
+                                        <legend id="checkbox"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Effettua ricerca in:</legend>
+                                         <div class="col-xs-11" id="input-box">
+                                             <input id="input" type="checkbox" name="autodisp"/>
+                                                    Auto Disponibili<br>
+                                             <input id="input" type="checkbox" name="mappa"/>
+                                                    Mappa<br>
+                                             <input id="input" type="checkbox" name="news"/>
+                                                    News<br>
+                                             <input id="input" type="checkbox" name="contatti"/>
+                                                    Contatti<br>
+                                         </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                         </li>
+                         <a href="Accedi.html">
+                           <button id="login" class="btn btn-default" type="button"></button>
+                         </a>
+                     </ul>
+                 </div>
+             </div>
+        </nav>
+
+        <header>
+          <div class="container">
+              <div class="intro-text">
+                  <div class="intro-heading">Pagamento</div>
+              </div>
           </div>
-        </div>
-      </nav>
+        </header>
 
-      <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-heading">Paga adesso!</div>
-            </div>
-        </div>
-      </header>
+        <ol class="breadcrumb">
+          <li><a href="Mainpage.html">Home</a></li>
+          <li><a class="active">Prenota</a></li>
+          <li><a class="active">Pagamento</a></li>
+        </ol>
 
-      <ol class="breadcrumb">
-        <li><a href="Mainpage.html">Home</a></li>
-        <li><a class="active">Prenota</a></li>
-        <li><a class="active">Pagamento</a></li>
-      </ol>
+        <br><br>
 
-      <br><br>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12" id="form">
-            <h1 class="section-heading">Effettua il pagamento</h1>
-              <p>Per effettuare il pagamento dell'auto desiderata inserisci i seguenti dati:</p>
-          </div>
-        </div>
-      </div>
-
-      <section id="section">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h3 class="panel-title">Pagamento</h3>
+        <div class="cnt">
+            <div class="inner">
+              <div class="row">
+                <div class="col-md-12">
+                  <h1 class="section-heading">Effettua il pagamento</h1>
+                    <p>Per effettuare il pagamento dell'auto desiderata inserisci i seguenti dati:</p>
                 </div>
-              <div class="panel-body">
-                <form role="form">
-                  <div class="form-group">
-                    <label for="cardNumber">Numero carta</label>
-                      <div class="input-group">
-                        <input type="text" class="form-control" id="cardNumber" placeholder="Numero di carta valido" required autofocus />
-                        <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-                      </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-xs-7 col-md-7">
-                      <div class="form-group">
-                        <label for="expityMonth">Data di scadenza</label>
-                        <div class="col-xs-6 col-lg-6 pl-ziro">
-                          <input type="text" class="form-control" id="expityMonth" placeholder="MM" required />
-                        </div>
-                        <div class="col-xs-6 col-lg-6 pl-ziro">
-                          <input type="text" class="form-control" id="expityYear" placeholder="YY" required />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-5 col-md-5 pull-right">
-                      <div class="form-group">
-                        <label for="cvCode">CV</label>
-                        <input type="password" class="form-control" id="cvCode" placeholder="CV" required />
-                      </div>
-                    </div>
-                  </div>
-                </form>
               </div>
             </div>
-            <ul class="nav nav-pills nav-stacked">
-              <li class="active">
-                <a href="#">
-                    <span class="badge pull-right">
-                    <span class="glyphicon glyphicon-euro"></span>
-                    1200</span>
-                Pagamento</a>
-              </li>
-            </ul>
-
-            <br>
-
-            <a href="#" class="btn btn-success btn-lg btn-block" role="button" id="buttonpaga">Paga</a>
-          </div>
         </div>
-      </div>
-    </section>
 
-    <br><br><br><br><br><br>
+<div class="container">
+    <div class='row'>
+        <div class='col-md-4'></div>
+        <div class='col-md-4'>
+                           <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Pagamento</h3>
+                  </div>
+                <div class="panel-body">
 
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4">
-            <span class="copyright">Copyright © 2017 nome dell'azienda</span>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-inline quicklinks">
-              <li class="col-lg-4"><a class="Map" href="sitemap.html">Sitemap</a></li>
-              <li class="col-lg-4"><a class="Contacts" href="Contattaci.html">Contatti</a></li>
-            </ul>
-          </div>
+          <script src='https://js.stripe.com/v2/' type='text/javascript'></script>
+          <form accept-charset="UTF-8" class="require-validation" data-cc-on-file="false" data-stripe-publishable-key="pk_bQQaTxnaZlzv4FnnuZ28LFHccVSaj" id="payment-form"><div class="paga"><input name="utf8" type="hidden" value="✓" /><input name="_method" type="hidden" value="PUT" /><input name="authenticity_token" type="hidden" value="qLZ9cScer7ZxqulsUWazw4x3cSEzv899SP/7ThPCOV8=" /></div>
+            <div class='form-row'>
+              <div class='col-xs-12 form-group required'>
+                <label class='control-label'>Metodo di pagamento</label>
+                           <div class="row">
+                              <div class="paymentCont">
+                                  <div class="paymentWrap">
+                                     <div class="btn-group paymentBtnGroup btn-group-justified" data-toggle="buttons">
+                                        <label class="btn paymentMethod active">
+                                            <div class="method visa"></div>
+                                            <input type="radio" name="options" checked> 
+                                        </label>
+                                        <label class="btn paymentMethod">
+                                            <div class="method master-card"></div>
+                                            <input type="radio" name="options"> 
+                                        </label>
+                                        <label class="btn paymentMethod">
+                                            <div class="method amex"></div>
+                                            <input type="radio" name="options">
+                                        </label>
+                                         <label class="btn paymentMethod">
+                                            <div class="method vishwa"></div>
+                                            <input type="radio" name="options"> 
+                                        </label>
+                                        <label class="btn paymentMethod">
+                                            <div class="method ez-cash"></div>
+                                            <input type="radio" name="options"> 
+                                        </label>
+                                    </div>        
+                                  </div>
+                               </div>
+                           </div>
+                    </div>
+              </div>
+            <div class='form-row'>
+              <div class='col-xs-12 form-group required'>
+                <label class='control-label'>Intestatario carta</label>
+                <input class='form-control' size='4' type='text'>
+              </div>
+            </div>
+            <div class='form-row'>
+              <div class='col-xs-12 form-group card required'>
+                <label class='control-label'>Numero carta</label>
+                        <div class="input-group">
+                          <input type="text" class="form-control" id="cardNumber" placeholder="Numero di carta valido" required autofocus />
+                          <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                        </div>
+              </div>
+            </div>
+            <div class='form-row'>
+              <div class='col-xs-4 form-group cvc required'>
+                <label class='control-label'>CVC</label>
+                <input autocomplete='off' class='form-control card-cvc' placeholder='es. 311' size='4' type='text'>
+              </div>
+              <div class='col-xs-4 form-group expiration required'>
+                <label class='control-label'>Scadenza</label>
+                <input class='form-control card-expiry-month' placeholder='MM' size='2' type='text'>
+              </div>
+              <div class='col-xs-4 form-group expiration required'>
+                <label class='control-label'> </label>
+                <input class='form-control card-expiry-year' placeholder='YYYY' size='4' type='text'>
+              </div>
+            </div>
+            <div class='form-row'>
+              <div class='col-md-12'>
+                <div class='form-control total btn btn-info'>
+                  Totale:
+                  <span class='amount'>90€</span>
+                </div>
+              </div>
+            </div>
+            <div class='form-group'>
+              <div class='col-md-12 form-group'>
+                <button class='form-control btn btn-primary submit-button' type='submit'>Paga</button>
+              </div>
+            </div>
+          </form>
         </div>
-      </div>
-    </footer>
+        <div class='col-md-4'></div>
+    </div>
+</div>
+    </div>
+        </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/drdown.js"></script>
+
+      <br><br><br><br><br><br>
+
+      <footer class="footer">
+          <div class="container">
+              <div class="row">
+                <div class="col-sm-4">
+                    <span class="copyright">Copyright © 2017 WishCar</span>
+                </div>
+                <div class="col-md-4">
+                  <ul class="list-inline quicklinks">
+                    <li class="col-lg-4"><a class="Map" href="Sitemap.html">Sitemap</a></li>
+                    <li class="col-lg-4"><a class="Contatti" href="Contattaci.html">Contatti</a></li>
+                    <li class="col-lg-4"><a class="T&C" href="Termini&Condizioni.html">T&C</a></li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+      </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/drdown.js"></script>
+        <script src="js/drdown2.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
   </body>
 
