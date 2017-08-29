@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>WishCar</title>
+        <meta name="description" content="Personal Website">
+        <meta name="author" content="io">
+
+        <!-- CSS references -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/MainPage.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    </head>
+
+    <body id="page-top">
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+             <div class="container">
+                 <div class="navbar-header page-scroll">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>                    
+                     </button>
+                     <a class="navbar-brand page-scroll" href="#page-top" id="title">WishCar</a>
+                 </div>
+                 <div class="collapse navbar-collapse" id=".navbar-collapse" id="hidden-collapse">
+                     <ul class="nav navbar-nav navbar-right">
+                         
+                         <li class="hidden">
+                             <a href="#page-top"></a>
+                         </li>
+                         
+                         <li>
+                             <a class="page-scroll" href="Mappa.html">Mappa</a>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="Autodisp.html">Auto Disponibili</a>
+                         </li>
+                         <li id="dropdown-dsk">
+                             <div class="dropdown">
+                                <a class="dropbtn" id="myDrop2" onclick="myFunction2()">Servizio</a>
+                                <font class="row" size="1" id="freccia">&#9699</font>
+                                <div id="myDropdown2" class="dropdown-content-form">
+                                    <div class="input-group">
+                                         <div align="center"><a href="Opinioni.html">Opinioni</a></div>
+                                         <div align="center"><a href="#Tariffe">Tariffe</a></div>
+                                         <div align="center"><a href="Contattaci.html">Contatti</a></div>
+                                         <div align="center"><a href="HoUnProblema.html">Ho un problema</a></div>
+                                    </div>
+                                </div>
+                             </div>
+                         </li>
+                         <li id="dropdown-mob">
+                            <a id="servizio" href="#">Servizio</a>
+                             <ul>
+                                <li><a id="servizio" href="Opinioni.html">Opinioni</a></li>
+                                <li><a href="#Tariffe">Tariffe</a></li>
+                                <li><a href="Contattaci.html">Contatti</a></li>
+                                <li><a href="HoUnProblema.html">Ho un problema</a></li>
+                             </ul>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="#SuDiNoi.html">Su di Noi</a>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="#news">News</a>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="#funzionamento">Come Funziona</a>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="Prenota.html">Prenota</a>
+                         </li>
+                         <li>
+                            <a id="mobile" href="Accedi.html">Accedi</a>
+                         </li>
+                         <li>
+                             <form id="qm-form" class="navbar-form" role="search">
+                                 <fieldset class="text-left" id="checkbox">
+                                         <legend id="checkbox">Effettua ricerca in:</legend>
+                                         <div class="col-xs-11" id="input-box">
+                                             <input id="input" type="checkbox" name="autodisp"/>
+                                                Auto Disponibili<br>
+                                             <input id="input" type="checkbox" name="mappa"/>
+                                                Mappa<br>
+                                             <input id="input" type="checkbox" name="news"/>
+                                                News<br>
+                                             <input id="input" type="checkbox" name="contatti"/>
+                                                Contatti<br>
+                                         </div>
+                                 </fieldset>
+                                 <div id="searching-xs" class="input-group">
+                                   <input type="text" class="form-control" placeholder="Cerca nel sito...">
+                                   <div class="input-group-btn">
+                                     <a href="Ricerca.html">
+                                        <button id="btn-check" class="btn btn-default" type="button"></button>
+                                     </a>
+                                   </div>
+                                 </div>
+                                 <br>
+                             </form>
+                         </li>
+                         <li id="dropdown">
+                             <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn" id="myDrop"></button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <form class="form" role="search">
+                                        <input type="text" id="searching" name="password" type="text" placeholder="Cerca nel sito..." class="form-control">
+                                        <div class="input-group">
+                                           <a class="col-xs-1" href="Ricerca.html">
+                                              <button id="btn-vai" class="btn btn-default" type="button">Vai</button>
+                                           </a>
+                                        </div>
+                                    </form>
+                                    <fieldset class="text-left" id="checkbox">
+                                        <legend id="checkbox"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Effettua ricerca in:</legend>
+                                         <div class="col-xs-11" id="input-box">
+                                             <input id="input" type="checkbox" name="autodisp"/>
+                                                    Auto Disponibili<br>
+                                             <input id="input" type="checkbox" name="mappa"/>
+                                                    Mappa<br>
+                                             <input id="input" type="checkbox" name="news"/>
+                                                    News<br>
+                                             <input id="input" type="checkbox" name="contatti"/>
+                                                    Contatti<br>
+                                         </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                         </li>
+                         <a href="Accedi.html">
+                           <button id="login" class="btn btn-default" type="button"></button>
+                         </a>
+                     </ul>
+                 </div>
+             </div>
+         </nav>
+
+        <div id="myCarousel" class="carousel slide">
+
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/Welcome.png" alt="Benvenuti!">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Benvenuti</h1>
+                            <p><em>WishCar</em> vi guiderà verso un futuro più green</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/b1.jpg" alt="Perché noi?">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>WishCar</h1>
+                            <p>Azienda leader nel settore trasporti green</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/Soddisfazione.png" alt="Soddisfatti">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Soddisfatti</h1>
+                            <p>L'affidabilità del nostro servizio è una garanzia, nonché il punto di forza della nostra azienda. Soddisfatti o... Soddisfatti</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+        </div>
+        
+        <div id="welcome-xs" class="carousel-inner">
+            <div class="item active">
+                <img src="img/intro-xs.png" alt="Benvenuti!">
+            </div>
+        </div>
+        
+        <section id="welc-xs-form">
+            <div class="container marketing">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 id="welc-form"class="section-heading">Benvenuti</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="body">
+        
+            <section id="news">
+                <div class="container marketing">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="section-heading">News</h2>
+                            <p class="section-subheading text-muted">Apertura di un nuovo punto nella tua città. Controlla la mappa <a href="Mappa.html">QUI</a></p>
+                            <p id="nuovi">Nuove stazioni sono in via di costruzione. Segui le nostre <a href="News.html">news</a> per essere aggiornato sulle ultime novità.</p><br>
+                            <div id="news-box" class="form-control">
+                                <br><br>
+                                <p><b>18 Agosto 2017</b></p>
+                                <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resa nota la tariffa "Premium", pensata per coloro che consumano molti chilometri ogni mese.</p>
+                                <br>
+                                <p><b>25 Agosto 2017</b></p>
+                                <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aperta la stazione in Corso Trapani 215.Inaugurazione presso la stazione a partire dalle 18.<br> Ti aspettiamo!</p>
+                                <br>
+                                <p><b>28 Agosto 2017</b></p>
+                                <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sono state pubblicate le auto offerte al pubblico nella sezione "Auto Disponibili". Controlla subito nella sezione dedicata.</p><br>
+                            </div>
+                            <br><br>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <img id="newsstaz" class="" src="img/NewsStaz2.png" alt="NewsStaz">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="featurette-divider" id="line">
+
+            <section id="funzionamento">
+                <div class="container marketing">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="section-heading">Come funziona</h2>
+                            <h3 class="section-subheading text-muted">Il nostro servizio di car sharing mira a diventare il migliore del suo settore.</h3>
+                        </div>
+                    </div>
+                    <div id="fun-circle" class="row text-center">
+                        <div id="accedi" class="col-sm-4">
+                            <img id="accedi-xl" class="img-circle" src="img/Accedi.png" alt="Accedi">
+                            <img id="accedi-md" class="img-circle" src="img/Accedi-md.png" alt="Accedi-md">
+                            <img id="accedi-xs" class="img-circle" src="img/Accedi-xs.png" alt="Accedi-xs">
+                            <div id="accedi-text">
+                                <h2>Accedi</h2>
+                                <p>Registra il tuo account se non l'hai ancora fatto ed effettua il login.<br><br><br><br><br></p>
+                            </div>
+                        </div>
+                        <div id="prenota" class="col-sm-4">
+                            <img id="prenota-xl" class="img-circle" src="img/Prenota.png" alt="Prenota">
+                            <img id="prenota-md" class="img-circle" src="img/Prenota-md.png" alt="Prenota-md">
+                            <img id="prenota-xs" class="img-circle" src="img/Prenota-xs.png" alt="Prenota-xs">
+                            <div id="prenota-text">
+                                <h2>Prenota un'auto</h2>
+                                <p>Seleziona la tua auto tra quelle disponibili nella tua zona d'interesse.<br><br><br><br><br></p>
+                            </div>
+                        </div>
+                        <div id="guida" class="col-sm-4">
+                            <img id="guida-xl" class="img-circle" src="img/Guida.png" alt="Guida">
+                            <img id="guida-md" class="img-circle" src="img/Guida-md.png" alt="Guida-md">
+                            <img id="guida-xs" class="img-circle" src="img/Guida-xs.png" alt="Guida-xs">
+                            <div id="guida-text">
+                                <h2>Guida</h2>
+                                <p>Sì, è così semplice. Non ci credete? Provate il nostro servizio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="featurette-divider" id="line">
+
+            <section id="Tariffe">
+                <div class="container marketing">
+                    <div class="row"> 
+                        <div class="col-lg-12 text-center">
+                            <h2 class="section-heading">Tariffe</h2>
+                            <h3 class="section-subheading text-muted">Proponiamo una serie di tariffe per ogni tipo di utenza. Scegli quella che si adatta meglio alle tue esigenze.</h3>
+                        </div>
+                    </div>
+                    <div class="square text-center">
+                        <div id="smart" class="square-content col-sm-3">
+                            <a class="square-link" href="Prenota.html">
+                                <img id="Smart" src="img/Smart.png" alt="Smart">
+                                <img id="Smart-md" src="img/Smart-md.png" alt="Smart-md">
+                                <img id="Smart-xs" src="img/Smart-xs.png" alt="Smart-xs">
+                            </a>
+                        </div>
+                        <div id="standard" class="square-content col-sm-3">
+                            <a href="Prenota.html">
+                                <img id="Standard" src="img/Standard.png" alt="Standard">
+                                <img id="Standard-md" src="img/Standard-md.png" alt="Standard-md">
+                                <img id="Standard-xs" src="img/Standard-xs.png" alt="Standard-xs">
+                            </a>
+                        </div>
+                        <div id="premium" class="square-content col-sm-3">
+                            <a href="Prenota.html">
+                                <img id="Premium" src="img/Premium.png" alt="Premium">
+                                <img id="Premium-md" src="img/Premium-md.png" alt="Premium-md">
+                                <img id="Premium-xs" src="img/Premium-xs.png" alt="Premium-xs">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+</section>
+
+            <hr class="featurette-divider" id="line">
+
+            <section id="mappa">
+                <div class="container marketing">
+                    <div class="row"> 
+                        <div class="col-lg-12 text-center">
+                            <h2 class="section-heading">Mappa</h2>
+                            <h3 class="section-subheading text-muted">Nella sezione <a href="Mappa.html">Mappa</a> potrai sempre vedere le stazioni attive e il numero delle macchine presenti. Scegli quella più vicina a te.</h3>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-sm-4">
+                            <img class="img-circle" src="img/Veicoli.png" alt="Veicoli">
+                            <h2>Veicoli</h2>
+                            <p>Offriamo la più tecnologica gamma di veicoli elettrici delle marche Nissan e Toyota, costruttori leader nella creazione di automobili a energia pulita.<br><br><br><br><br></p>
+                        </div>
+                        <div class="col-sm-4">
+                            <img class="img-circle" src="img/Stazioni.png" alt="Stazioni">
+                            <h2>Stazioni</h2>
+                            <p>Terminato l'utilizzo del nostro servizio, avrai sempre a disposizione un posto auto dove poter posteggiare la tua auto. Non avrai più il pensiero del parcheggio e di dover fare il pieno.<br><br><br><br><br></p>
+                        </div>
+                        <div class="col-sm-4">
+                            <img class="img-circle" src="img/Orario.png" alt="Orario">
+                            <h2>24h  /  7</h2>
+                            <p>Le nostre autovetture sono sempre a tua disposizione, 24 ore su 24, 7 giorni su 7.</p>
+                        </div>
+                    </div>
+                </div>
+</section>
+            
+        </section>
+        
+        <br><br><br><br><br>
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm-4">
+                      <span class="copyright">Copyright © 2017 WishCar</span>
+                  </div>
+                  <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                      <li class="col-lg-4"><a class="Map" href="Sitemap.html">Sitemap</a></li>
+                      <li class="col-lg-4"><a class="Contatti" href="Contattaci.html">Contatti</a></li>
+                      <li class="col-lg-4"><a class="T&C" href="Termini&Condizioni.html">T&C</a></li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/drdown.js"></script>
+        <script src="js/drdown2.js"></script>
+        
+    </body>
+</html>

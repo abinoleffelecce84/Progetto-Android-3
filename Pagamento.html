@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="it">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pagamento</title>
+        <meta name="description" content="Personal Website">
+        <meta name="author" content="io">
+
+        <!-- CSS references -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/MainPage.css" rel="stylesheet">
+        <link href="css/pagamento.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body id="page-top">
+
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <!-- barrette -->
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="Mainpage.html" id="title">Nome dell'azienda</a>
+          </div>
+          <div class="collapse navbar-collapse" id=".navbar-collapse" id="hidden-collapse"> <!-- <== mobile version -->
+            <ul class="nav navbar-nav navbar-right">
+            <!-- title -->
+             <li class="hidden">
+                 <a href="#page-top"></a>
+             </li>
+             <!-- lateral voices -->
+             <li>
+                 <a class="page-scroll" href="Mappa.html">Mappa</a>
+             </li>
+             <li>
+                 <a class="page-scroll" href="Autodisp.html">Auto Disponibili</a>
+             </li>
+             <li>
+                 <a class="page-scroll" href="#featurettes">Servizio</a>
+             </li>
+             <li>
+                 <a class="page-scroll" href="Contattaci.html">Su di Noi</a>
+             </li>
+             <li>
+                 <a class="page-scroll" href="#featurettes">News</a>
+             </li>
+             <li>
+                 <a class="page-scroll" href="#featurettes">Come Funziona</a>
+             </li>
+             <li>
+                 <a class="page-scroll" href="prenota.html">Prenota</a>
+             </li>
+             <li>
+               <form id="qm-form" class="navbar-form" role="search">
+                 <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Cerca nel sito...">
+                   <div class="input-group-btn">
+                    <button id="btn-check" class="btn btn-default" type="button"></button>
+                   </div>
+                 </div>
+               </form>
+             </li>
+             <li id="dropdown">
+               <div class="dropdown" id="drop">
+                 <button onclick="myFunction()" class="dropbtn"></button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <form class="form" role="search">
+                      <div class="input-group">
+                       <input type="text" class="form-control" placeholder="Cerca nel sito...">
+                       <div class="input-group-btn">
+                         <button id="btn-check" class="btn btn-default" type="button"></button>
+                       </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </li>
+              <li><button id="login" class="btn btn-default" type="button"</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading">Paga adesso!</div>
+            </div>
+        </div>
+      </header>
+
+      <ol class="breadcrumb">
+        <li><a href="Mainpage.html">Home</a></li>
+        <li><a class="active">Prenota</a></li>
+        <li><a class="active">Pagamento</a></li>
+      </ol>
+
+      <br><br>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12" id="form">
+            <h1 class="section-heading">Effettua il pagamento</h1>
+              <p>Per effettuare il pagamento dell'auto desiderata inserisci i seguenti dati:</p>
+          </div>
+        </div>
+      </div>
+
+      <section id="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Pagamento</h3>
+                </div>
+              <div class="panel-body">
+                <form role="form">
+                  <div class="form-group">
+                    <label for="cardNumber">Numero carta</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control" id="cardNumber" placeholder="Numero di carta valido" required autofocus />
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-7 col-md-7">
+                      <div class="form-group">
+                        <label for="expityMonth">Data di scadenza</label>
+                        <div class="col-xs-6 col-lg-6 pl-ziro">
+                          <input type="text" class="form-control" id="expityMonth" placeholder="MM" required />
+                        </div>
+                        <div class="col-xs-6 col-lg-6 pl-ziro">
+                          <input type="text" class="form-control" id="expityYear" placeholder="YY" required />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-5 col-md-5 pull-right">
+                      <div class="form-group">
+                        <label for="cvCode">CV</label>
+                        <input type="password" class="form-control" id="cvCode" placeholder="CV" required />
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <ul class="nav nav-pills nav-stacked">
+              <li class="active">
+                <a href="#">
+                    <span class="badge pull-right">
+                    <span class="glyphicon glyphicon-euro"></span>
+                    1200</span>
+                Pagamento</a>
+              </li>
+            </ul>
+
+            <br>
+
+            <a href="#" class="btn btn-success btn-lg btn-block" role="button" id="buttonpaga">Paga</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br><br><br><br><br><br>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <span class="copyright">Copyright © 2017 nome dell'azienda</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="col-lg-4"><a class="Map" href="sitemap.html">Sitemap</a></li>
+              <li class="col-lg-4"><a class="Contacts" href="Contattaci.html">Contatti</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/drdown.js"></script>
+
+  </body>
+
+</html>

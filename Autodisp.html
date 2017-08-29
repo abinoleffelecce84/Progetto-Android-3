@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="it">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Auto disponibili</title>
+        <meta name="description" content="Personal Website">
+        <meta name="author" content="io">
+        
+        <!-- CSS references -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/MainPage.css" rel="stylesheet">
+        <link href="css/Autodisp.css" rel="stylesheet">
+        
+        <!-- Custom Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    </head>
+    
+    <body id="page-top">
+        
+        <nav class="navbar navbar-default navbar-fixed-top">
+             <div class="container">
+                 <div class="navbar-header page-scroll">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         
+                     <!-- barrette -->
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>                    
+                     </button>
+                     <a class="navbar-brand page-scroll" href="#page-top" id="title">Nome dell'azienda</a>
+                 </div>
+                 <div class="collapse navbar-collapse" id=".navbar-collapse" id="hidden-collapse"> <!-- <== mobile version -->
+                     <ul class="nav navbar-nav navbar-right">
+                         <!-- title -->
+                         <li class="hidden">
+                             <a href="#page-top"></a>
+                         </li>
+                         <!-- lateral voices -->
+                         <li>
+                             <a class="page-scroll" href="#services">Mappa</a>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="#featurettes">Auto Disponibili</a>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="#featurettes">Servizio</a>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="#featurettes">Su di Noi</a>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="#featurettes">News</a>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="#featurettes">Come Funziona</a>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="#featurettes">Prenota</a>
+                         </li>
+                         <li>
+                             <a class="page-scroll" id="login-xs" href="#featurettes">Accedi</a>
+                         </li>
+                         <li>
+                             <form id="qm-form" class="navbar-form" role="search">
+                                 <div class="input-group">
+                                   <input type="text" class="form-control" placeholder="Cerca nel sito...">
+                                   <div class="input-group-btn">
+                                     <button id="btn-check" class="btn btn-default" type="button"></button>
+                                   </div>
+                                 </div>
+                             </form>
+                         </li>
+                         <li id="dropdown">
+                             <div class="dropdown" id="drop">
+                                <button onclick="myFunction()" class="dropbtn"></button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <form class="form" role="search">
+                                        <div class="input-group">
+                                         <input type="text" class="form-control" placeholder="Cerca nel sito...">
+                                         <div class="input-group-btn">
+                                           <button id="btn-check" class="btn btn-default" type="button"></button>
+                                         </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                         </li>
+                         <li>
+                            <form action=Registrati.html> 
+                               <button id="login" class="btn btn-default" type="button"
+                            </form>
+                        </li>
+                     </ul>
+                 </div>
+             </div>
+         </nav>
+            
+        <header>
+            <div class="container">
+                <div class="intro-text">
+                    <div class="intro-heading">L'imbarazzo della scelta</div>
+                    <div class="intro-lead-in">Grazie alla nostra vasta gamma di automobili, ci assicuriamo di darti l'auto per le tue evenienze</div>
+                </div>
+            </div>
+        </header> <!-- header page -->
+        
+        <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a class="active">Auto disponibili</a></li>
+        </ol> <!-- where I am -->
+        
+        <section id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-subheading text-muted"><br>Seleziona l'auto che desideri tra quelle disponibili</h2>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-sm-4 portfolio-item" id="car">
+                        <a href="#modal1" class="portfolio-link" data-toggle="modal">
+                            <div class="caption"></div>
+                            <img src="img/yaris.png" class="img-responsive hover" alt="">
+							<p class="text">Toyota Yaris</p>
+                        </a>  
+                    </div> <!-- 1 element -->
+                    <div class="col-sm-4 portfolio-item" id="car">
+                        <a href="#modal2" class="portfolio-link" data-toggle="modal">
+                            <div class="caption"></div>
+                            <img src="img/auris.jpg" class="img-responsive hover" alt="">
+							<p class="text">Toyota Auris</p>
+                        </a>  
+                    </div> <!-- 2 element -->
+                    <div class="col-sm-4 portfolio-item" id="car">
+                        <a href="#modal3" class="portfolio-link" data-toggle="modal">
+                            <div class="caption"></div>
+                            <img src="img/leaf.jpg" class="img-responsive hover" alt="">
+							<p class="text">Nissan Leaf</p>
+                        </a>  
+                    </div> <!-- 3 element -->
+                </div>
+            </div>
+        </section> <!-- portfolio -->
+        
+        <div class="portfolio-modal modal" id="modal1">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Toyota Yaris</h2>
+                                <hr class="star-primary">
+                                <img src="img/yaris.png" class="img-responsive img-centered" alt="">
+                                <p>Piccola e agile per la città.</p>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- portfolio modal 1 -->
+        <div class="portfolio-modal modal" id="modal2">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Toyota Auris</h2>
+                                <hr class="star-primary">
+                                <img src="img/auris.jpg" class="img-responsive img-centered" alt="">
+                                <p>Spaziosa e confortevole, ideale per le famiglie.</p>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- portfolio modal 2 -->
+        <div class="portfolio-modal modal" id="modal3">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Nissan Leaf</h2>
+                                <hr class="star-primary">
+                                <img src="img/leaf.jpg" class="img-responsive img-centered" alt="">
+                                <p>Interamente elettrica, nel rispetto dell'ambiente.</p>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- portfolio modal 3 -->
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <span class="copyright">Copyright © no one Alicia Keys</span>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline quicklinks">
+                            <li class="col-lg-4"><a class="Map" href="#">Map</a></li>
+                            <li class="col-lg-4"><a class="Contacts" href="#contacts">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer> <!-- footer -->
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/drdown.js"></script>
+        
+    </body>
+    
+</html>
