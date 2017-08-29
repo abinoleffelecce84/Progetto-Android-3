@@ -1,0 +1,983 @@
+body{ /*general view of the webpage*/
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: bisque;
+}
+
+p{
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+#checkbox{
+    color: white;
+    position: relative;
+    bottom: 10px;
+}
+
+#input-box{
+    position: relative;
+    left: 15px;
+}
+
+#searching{
+    border-color: transparent;
+    width: 200px;
+    position: relative;
+    left: 24px;
+    top: 10px;
+}
+
+.dropdown-content{
+    padding-bottom: 50px;
+}
+
+#btn-vai{
+    position: relative;
+    top: 160px;
+    left: 148px;
+}
+
+#link{
+    color: #1978cc;
+    font-size: 12px;
+}
+
+h1,h2,h3,h4,h5{ /*all titles*/
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+.navbar-default{ /*navbar on the mobile version*/
+    border-color: transparent;
+    background-color: #222;
+}
+
+.navbar-default .navbar-brand{ /*title brand on both versions*/
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    margin: auto;
+}
+
+.navbar-form{
+    margin: auto;
+}
+
+#title:hover{
+    color: #fed136;
+}
+
+.navbar-default .nav li a{ /*navbar voices*/
+    text-transform: uppercase;
+    margin: auto;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-size: 10.5px;
+}
+
+.navbar-default .nav li a:hover{ 
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fed136;
+}
+
+.collapse{
+    overflow: hidden;
+}
+
+.carousel{
+    margin-bottom: -60px;
+}
+
+.carousel-caption{
+    z-index: 10;
+    margin-bottom: 10%;
+}
+
+#news-box{
+    height: auto;
+    width: auto;
+}
+
+@media (max-width: 1920px) { 
+    
+    .carousel-caption h1{ 
+        font-size: 120px;
+        text-shadow: 1px 1px #000000;
+    } 
+    
+    .carousel-caption p{
+        font-size: 20px;
+        text-shadow: 1px 1px #000000;
+    }
+    
+    #myDropdown{
+        
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    
+}
+
+@media (max-width: 1280px) {
+    
+    .carousel-caption h1{
+        font-size: 80px;
+        text-shadow: 1px 1px #000000;
+    }
+    
+    .carousel-caption p{
+        font-size: 12px;
+        text-shadow: 1px 1px #000000;
+    }
+
+}
+
+@media (min-width:1200px){
+    
+    #mobile{
+        display: none;
+    }
+    
+    .carousel-caption h1{
+        font-size: 80px;
+        text-shadow: 1px 1px #000000;
+    }
+    
+    .carousel-caption p{
+        font-size: 12px;
+        text-shadow: 1px 1px #000000;
+    }
+    
+    #dropdown-mob{
+        display: none;
+    }
+    
+    #myDrop2 { /*scritta*/
+        margin: auto;
+        background-color: transparent;
+        padding: 16px;
+        border: none;
+        cursor: pointer;
+        float: right;
+        position: relative;
+        top: 1px;
+        right: 130px;
+        display: inline-block;
+        text-decoration: none;
+    }
+    
+    .dropdown-content-form {
+        background-color: #222;
+        position: absolute;
+        top: 40px;
+        right: 95px;
+        display: none;
+        height: 120px;
+        width: 150px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .input-group a{
+        position: relative;
+        left: 15px;
+        top: 15px;
+        margin-top: 10px;
+        text-decoration: none;
+    }
+    
+    #freccia{
+        position: absolute;
+        color: white;
+        top: 15px;
+        left: -40px;
+        transform: rotate(-45deg);
+    }
+    
+    .dropdown-class{
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content-class{
+        display: none;
+        position: absolute;
+        background-color: #222;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+    
+    #qm-form{
+        display: none;
+    }
+    
+    .navbar-form{
+        background-color: #222;
+    }
+
+    #myDrop {
+        margin: auto;
+        background-color: #222;
+        padding: 16px;
+        background-image:url('../img/download.png');
+        border: none;
+        cursor: pointer;
+        float: right;
+        position: relative;
+        top: 7px;
+        right: 30px;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        background-color: rgba(10,10,10,0.8);
+        position: absolute;
+        top: 51px;
+        right: 30px;
+        display: none;
+        width: 250px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .show {display:block;}
+    
+    #myDrop:hover{
+        background-image:url(../img/qm.png);
+    }
+
+    #myDrop:focus {
+        background-image:url(../img/qm.png);
+    }
+    
+    #login{
+        background-color: transparent;
+        padding: 16px;
+        background-image:url('../img/in.png');
+        border: none;
+        cursor: pointer;
+        float: right;
+        position: relative;
+        top: 7px;
+        right: 20px;
+        display: inline-block;
+    }
+    
+    #login:hover{
+        background-image: url(../img/ing.png);
+    }
+    
+    .navbar-default .nav li a{
+        position: relative;
+        right: 130px;
+    }
+    
+    #login-xs{
+        display: none;
+    }
+    
+    #welcome-xs{
+        display: none;
+    }
+    
+    #welc-xs-form{
+        display: none;
+    }
+    
+    #myCarousel{
+        position: relative;
+        top: 50px;
+    }
+    
+    #news{
+        position: relative;
+        top: 50px;
+    }
+    
+    #accedi-xs, #prenota-xs, #guida-xs, #accedi-md, #prenota-md, #guida-md{
+        display: none;
+    }
+    
+    #Smart, #Standard, #Premium{
+        -webkit-transition: all ease .5s;
+        -moz-transition: all ease .5s;
+        transition: all ease .5s;
+    }
+    
+    #Smart:hover, #Standard:hover, #Premium:hover{
+        box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2);
+        -webkit-transition: all ease .5s;
+        -moz-transition: all ease .5s;
+        transition: all ease .5s;
+    }
+    
+    #Smart-xs, #Standard-xs, #Premium-xs, #Smart-md, #Standard-md, #Premium-md{
+        display: none;
+    }
+    
+    .square-content{
+        margin-right: 10px;
+        position: relative;
+        left: 11%;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+    #mobile{
+        display: none;
+    }
+    
+    #dropdown-mob{
+        display: none;
+    }
+    
+    #myDrop2 { /*scritta*/
+        margin: auto;
+        background-color: transparent;
+        padding: 16px;
+        border: none;
+        cursor: pointer;
+        float: right;
+        position: relative;
+        top: 1px;
+        right: 30px;
+        display: inline-block;
+        text-decoration: none;
+    }
+    
+    .dropdown-content-form {
+        background-color: #222;
+        position: absolute;
+        top: 40px;
+        right: 0px;
+        display: none;
+        height: 120px;
+        width: 150px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .input-group a{
+        position: relative;
+        left: 15px;
+        top: 15px;
+        margin-top: 10px;
+        text-decoration: none;
+    }
+    
+    #freccia{
+        position: absolute;
+        color: white;
+        top: 15px;
+        left: 60px;
+        transform: rotate(-45deg);
+    }
+    
+    #qm-form{
+        display: none;
+    }
+    
+    .navbar-form{
+        background-color: #222;
+    }
+
+    #myDrop {
+        margin: auto;
+        background-color: #222;
+        padding: 16px;
+        background-image:url('../img/download.png');
+        border: none;
+        cursor: pointer;
+        float: right;
+        position: relative;
+        top: 7px;
+        right: 30px;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        background-color: rgba(10,10,10,0.8);
+        position: absolute;
+        top: 51px;
+        right: 30px;
+        display: none;
+        width: 250px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .show {display:block;}
+    
+    #myDrop:hover{
+        background-image:url(../img/qm.png);
+    }
+    
+    #login{
+        background-color: transparent;
+        padding: 16px;
+        background-image:url('../img/in.png');
+        border: none;
+        cursor: pointer;
+        float: right;
+        position: relative;
+        top: 7px;
+        right: 20px;
+        display: inline-block;
+    }
+    
+    #login:hover{
+        background-image: url(../img/ing.png);
+    }
+    
+    .navbar-default .nav li a{
+        margin: auto;
+        position: relative;
+        right: 30px;
+    }
+    
+    #login-xs{
+        display: none;
+    }
+    
+    #welcome-xs{
+        display: none;
+    }
+    
+    #welc-xs-form{
+        display: none;
+    }
+    
+    #myCarousel{
+        position: relative;
+        top: 50px;
+    }
+    
+    #news{
+        position: relative;
+        top: 50px;
+    }
+    
+    .square-content{
+        margin-right: 180px;
+    }
+    
+    #accedi-xs, #prenota-xs, #guida-xs, #accedi-md, #prenota-md, #guida-md{
+        display: none;
+    }
+    
+    #accedi{
+        margin-right: 200px;
+        position: relative;
+        left: 290px;
+    }
+    
+    #accedi-text{
+        position: relative;
+        left: 10%;
+    }
+    
+    #prenota{
+        margin-right: 200px;
+        position: relative;
+        left: 290px;
+    }
+    
+    #prenota-text{
+        position: relative;
+        left: 10%;
+    }
+    
+    #guida{
+        margin-right: 200px;
+        position: relative;
+        left: 290px;
+    }
+    
+    #guida-text{
+        position: relative;
+        left: 10%;
+    }
+    
+    #smart,#standard{
+        position: relative;
+        left: 110px;
+    }
+    
+    #premium{
+        position: relative;
+        left: 310px;
+        padding-top: 50px;
+    }
+    
+    #Smart, #Standard, #Premium{
+        -webkit-transition: all ease .5s;
+        -moz-transition: all ease .5s;
+        transition: all ease .5s;
+    }
+    
+    #Smart:hover, #Standard:hover, #Premium:hover{
+        box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2);
+        -webkit-transition: all ease .5s;
+        -moz-transition: all ease .5s;
+        transition: all ease .5s;
+    }
+    
+    #Smart-xs, #Standard-xs, #Premium-xs, #Smart-md, #Standard-md, #Premium-md{
+        display: none;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    #mobile{
+        display: none;
+    }
+    
+    #dropdown-mob{
+        display: none;
+    }
+    
+    #myDrop2 { /*scritta*/
+        margin: auto;
+        background-color: transparent;
+        padding: 16px;
+        border: none;
+        cursor: pointer;
+        float: right;
+        position: relative;
+        top: 1px;
+        right: 0px;
+        display: inline-block;
+        text-decoration: none;
+    }
+    
+    .dropdown-content-form {
+        background-color: #222;
+        position: absolute;
+        top: 40px;
+        left: -25px;
+        display: none;
+        height: 120px;
+        width: 150px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    #freccia{
+        position: absolute;
+        color: white;
+        top: 15px;
+        left: 90px;
+        transform: rotate(-45deg);
+    }
+    
+    .input-group a{
+        position: relative;
+        left: 15px;
+        top: 15px;
+        margin-top: 10px;
+        text-decoration: none;
+    }
+    
+    #qm-form{
+        display: none;
+    }
+    
+    .navbar-form{
+        background-color: #222;
+    }
+
+    #myDrop {
+        background-color: #222;
+        padding: 16px;
+        background-image:url('../img/download.png');
+        border: none;
+        cursor: pointer;
+        float: right;
+        position: relative;
+        right: 90px;
+        bottom: 40px;
+        display: inline-block;
+    }
+
+    #myDrop:hover{
+        background-image:url(../img/qm.png);
+    }
+
+    .dropdown-content {
+        background-color: rgba(10,10,10,0.8);
+        position: absolute;
+        top: 50px;
+        right: 90px;
+        display: none;
+        width: 250px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .show {display:block;}
+    
+    #login{
+        background-color: transparent;
+        padding: 16px;
+        background-image:url('../img/in.png');
+        border: none;
+        cursor: pointer;
+        float: right;
+        position: relative;
+        bottom: 73px;
+        right: 50px;
+        display: inline-block;
+    }
+    
+    #login:hover{
+        background-image: url(../img/ing.png);
+    }
+    
+    .navbar-nav{
+        align-content: center;
+    }
+    
+    .navbar-default{
+        height: 100px;
+    }
+    
+    .navbar-default .nav li a{
+        margin: 0 1px;
+    }
+  
+    #myCarousel{
+        position: relative;
+        top: 100px;
+    }
+    
+    #news{
+        position: relative;
+        top: 130px;
+        margin-bottom: 150px;
+    }
+    
+    #services{
+        position: relative;
+        top: 100px;
+    }
+    
+    #login-xs{
+        display: none;
+    }
+    
+    #welcome-xs{
+        display: none;
+    }
+    
+    #welc-xs-form{
+        display:none;
+    }
+    
+    .square-content{
+        margin-right: 180px;
+    }
+    
+    #fun-circle{
+        position: relative;
+        right: 5px;
+    }
+    
+    #accedi-xs, #prenota-xs, #guida-xs, #accedi-md, #prenota-md, #guida-md{
+        display: none;
+    }
+    
+    #accedi{
+        margin-right: 200px;
+        position: relative;
+        left: 180px;
+    }
+    
+    #accedi-text{
+        position: relative;
+        left: 31%;
+    }
+    
+    #prenota{
+        margin-right: 200px;
+        position: relative;
+        left: 180px;
+    }
+    
+    #prenota-text{
+        position: relative;
+        left: 31%;
+    }
+    
+    #guida{
+        margin-right: 200px;
+        position: relative;
+        left: 180px;
+    }
+    
+    #guida-text{
+        position: relative;
+        left: 31%;
+    }
+    
+    #smart,#standard{
+        position: relative;
+        left: 50px;
+    }
+    
+    #premium{
+        position: relative;
+        left: 230px;
+        padding-top: 50px;
+    }
+    
+    #Smart, #Standard, #Premium{
+        -webkit-transition: all ease .5s;
+        -moz-transition: all ease .5s;
+        transition: all ease .5s;
+    }
+    
+    #Smart:hover, #Standard:hover, #Premium:hover{
+        box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2);
+        -webkit-transition: all ease .5s;
+        -moz-transition: all ease .5s;
+        transition: all ease .5s;
+    }
+    
+    #Smart-xs, #Standard-xs, #Premium-xs, #Smart-md, #Standard-md, #Premium-md{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 796px) {
+    
+    #newsstaz{
+        display: none;
+    }
+    
+}
+
+@media (min-width: 100px) and (max-width: 767px) {
+    
+    #dropdown-dsk{
+        display: none;
+    }
+    
+    .navbar-form{
+        border-color: none;
+    }
+    
+    #dropdown{
+        display: none;
+    }
+    
+    #login{
+        display: none;
+    }
+    
+    #myCarousel{
+        display: none;
+    }
+
+    .featurette{
+        text-align: center;
+    }
+    
+    .Map{
+        position: relative;
+        right: 10px;
+    }
+    
+    #contacts{
+        position: relative;
+        right: 20px;
+    }
+    
+    #checkbox{
+        position: relative;
+        top: 2px;
+    }
+    
+    #searching-xs{
+        position: relative;
+        top: 7px;
+    }
+    
+    #btn-check{
+        background-image: url(../img/download.png);
+        background-color: #222;
+        padding: 16px;
+    }
+    
+    #welcome-xs{
+        position: absolute;
+        top: 50px;
+    }
+    
+    #welc-form{
+        color: white;
+    }
+    
+    .square-content{
+        margin-bottom: 20px;
+    }
+    
+    #accedi-xl{
+        display: none;
+    }
+    
+    #prenota-xl{
+       display: none;
+    }
+    
+    #guida-xl{
+        display: none;
+    }
+    
+    #Smart{
+        display: none;
+    }
+    
+    #Standard{
+        display: none;
+    }
+    
+    #Premium{
+        display: none;
+    }
+    
+}
+
+@media (min-width: 500px) and (max-width: 767px){
+    
+    #accedi-xs, #prenota-xs, #guida-xs{
+        display: none;
+    }
+    
+    #Smart-xs, #Standard-xs, #Premium-xs{
+        display: none;
+    }
+    
+    #body{
+        position: relative;
+        bottom: 110px;
+    }
+    
+}
+
+@media (min-width: 100px) and (max-width: 499px){
+    
+    #welc-form{
+        font-size: 30px;
+        position: relative;
+        bottom: 30px;
+    }
+    
+    #body{
+        position: relative;
+        bottom: 200px;
+    }
+    
+    #accedi-md, #prenota-md, #guida-md{
+        display: none;
+    }
+    
+    #Smart-md, #Standard-md, #Premium-md{
+        display: none;
+    }
+    
+}
+
+section{ /*Only the section*/
+    padding: 110px 0;
+}
+
+section h2.section-heading{ /*services title*/
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+section h3.section-subheading{ /*subtitle of services*/
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.copyright{
+    color: #ffffff;
+}
+
+footer{
+    background-color: #222;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    height: 50%;
+    clear: both;
+}
+
+.footer li a{
+    margin-left: 10px;
+}
+
+.col-lg-4{
+    text-transform: uppercase;
+    line-height: 40px;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.copyright{
+    text-transform: uppercase;
+    line-height: 40px;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.Map{
+    text-transform: uppercase;
+    line-height: 40px;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.Contacts{
+    text-transform: uppercase;
+    line-height: 40px;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+::moz-selection{
+    text-shadow: none;
+    background: #fed136;
+}
+
+::selection{
+    text-shadow: none;
+    background: #fed136;
+}
+
+img::selection{
+    background: 0 0;
+}
+
+img::moz-selection{
+    background: 0 0;
+}

@@ -1,0 +1,83 @@
+header{
+    text-align: center;
+    color: #ffffff;
+    background-attachment: scroll;
+    background-image: url(https://getoutofdebt.org/wp-content/uploads/2013/02/car-money.jpg);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.intro-text{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.intro-lead-in{
+    font-style: italic;
+    line-height: 18px;
+    margin-bottom: 25px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+}
+
+.intro-heading{
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+@media(min-width:768px){
+
+    .intro-text{
+        padding-top: 300px;
+        padding-bottom: 200px;
+    }
+
+    .intro-lead-in{
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+    }
+
+    .intro-heading{
+        margin-bottom: 50px;
+        font-size: 75px;
+        font-weight: 700px;
+        line-height: 75px;
+    }
+
+}
+
+.breadcrumb{
+    background: #222;
+    border-radius: 0;
+}
+
+p{
+    line-height: 33px;
+}
+
+#form{
+    text-align: justify;
+}
+
+#section{
+  padding: inherit;
+  position: relative;
+  height: auto;
+}
+
+#buttonpaga{
+  margin-top: -30px;
+}
+
+footer{
+  height: 50%;
+  clear: both;
+}

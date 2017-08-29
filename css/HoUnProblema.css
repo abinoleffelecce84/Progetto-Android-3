@@ -1,0 +1,110 @@
+header{
+    text-align: center;
+    color: #ffffff;
+    background-attachment: scroll;
+    background-image: url(../img/header-bg.png);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+#lorem{
+    text-align: justify;
+}
+
+.intro-text{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.intro-lead-in{
+    font-style: italic;
+    line-height: 18px;
+    margin-bottom: 25px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+}
+
+.intro-heading{
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+@media(min-width:768px){
+    
+    .intro-text{
+        padding-top: 300px;
+        padding-bottom: 200px;
+    }
+    
+    .intro-lead-in{
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+    }
+    
+    .intro-heading{
+        margin-bottom: 50px;
+        font-size: 75px;
+        font-weight: 700px;
+        line-height: 75px;
+    }
+    
+}
+
+.breadcrumb{
+    background: #222;
+    border-radius: 0;
+}
+
+.form-group .control-label{
+    font-size: 15px;
+}
+
+p{
+    line-height: 33px;
+}
+
+#nameclient, #mailaddress, #fieldmessage{
+    padding: 20px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+#buttonsubmit{
+    background-color: #cea532;
+    border: transparent;
+    text-transform: uppercase;
+}
+
+#buttonsubmit, #buttonsubmit:hover{
+    background-color: #cea532;
+    border: transparent;
+    text-transform: uppercase;
+}
+
+#buttonsubmit: active{
+    background-color: #c3d369;
+}
+
+
+.cnt{
+    text-align: center;
+}
+
+.inner{
+    display: inline-block;
+    text-align: center;
+    padding: 50px;
+}
+
+footer{
+  height: 50%;
+  clear: both;
+}
