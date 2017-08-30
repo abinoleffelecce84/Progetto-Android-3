@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>News</title>
+        <title>News | WishCar</title>
         <meta name="description" content="Personal Website">
         <meta name="author" content="io">
         
@@ -147,7 +147,7 @@
             <div class="container">
                 <div class="intro-text">
                     <div class="intro-heading">News</div>
-                    <div class="intro-lead-in">Tenetevi aggiornati sulle ultime novit&agrave;.</div>
+                    <div class="intro-lead-in">Tenetevi aggiornati sulle ultime novità</div>
                 </div>
             </div>
         </header>
@@ -157,19 +157,26 @@
             <li><a class="active">News</a></li>
         </ol>
         
-        <div class="container">
-            <div class="row">
-				<h2 class="section-heading">17/08/19 - Notizia 2</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum viverra fermentum. Etiam laoreet sed magna a consectetur. Duis eu faucibus lacus. Pellentesque ut scelerisque nunc. In vitae viverra orci. Curabitur mollis mauris eget enim varius, a aliquam dolor lobortis. Donec mauris dolor, porta id feugiat ac, blandit nec nisl. Nulla viverra quam quis consequat dapibus. Vivamus et ex lobortis, luctus tellus vitae, interdum dolor. Maecenas viverra auctor bibendum. Proin egestas sed massa id mattis. Etiam a ante semper nibh interdum bibendum.</p><br>
-					<a class="active">Continua a leggere...</a>
+        <section id="news">
+            <div class="container">
+                <div id="title1" class="row">
+                    <h2 id="notice1" class="section-heading">16/12/16 - Notizia 2</h2>
+                    <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum viverra fermentum. Etiam laoreet sed magna a consectetur. Duis eu faucibus lacus. Pellentesque ut scelerisque nunc. In vitae viverra orci. Curabitur mollis mauris eget enim varius, a aliquam dolor lobortis. Donec mauris dolor, porta id feugiat ac, blandit nec nisl. Nulla viverra quam quis consequat dapibus.</p>
+                    <a href="#title1"><button id="show-btn" class="btn btn-default">Continua a leggere...</button></a>
+                    <div id="notice-1" class="container">
+                        <div class="row">
+                            <p align="justify"> Vivamus et ex lobortis, luctus tellus vitae, interdum dolor. Maecenas viverra auctor bibendum. Proin egestas sed massa id mattis. Etiam a ante semper nibh interdum bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum viverra fermentum. Etiam laoreet sed magna a consectetur. Duis eu faucibus lacus. Pellentesque ut scelerisque nunc. In vitae viverra orci. Curabitur mollis mauris eget enim varius, a aliquam dolor lobortis. Donec mauris dolor, porta id feugiat ac, blandit nec nisl. Nulla viverra quam quis consequat dapibus. Vivamus et ex lobortis, luctus tellus vitae, interdum dolor. Maecenas viverra auctor bibendum. Proin egestas sed massa id mattis. Etiam a ante semper nibh interdum bibendum.</p><br>
+                        </div>            
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <h2 class="section-heading">14/01/17 - Notizia 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum viverra fermentum. Etiam laoreet sed magna a consectetur. Duis eu faucibus lacus. Pellentesque ut scelerisque nunc. In vitae viverra orci. Curabitur mollis mauris eget enim varius, a aliquam dolor lobortis. Donec mauris dolor, porta id feugiat ac, blandit nec nisl. Nulla viverra quam quis consequat dapibus. Vivamus et ex lobortis, luctus tellus vitae, interdum dolor. Maecenas viverra auctor bibendum. Proin egestas sed massa id mattis. Etiam a ante semper nibh interdum bibendum.</p><br>
+                </div>
             </div>
-            <div class="row">
-				<h2 class="section-heading">14/08/19 - Notizia 1</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum viverra fermentum. Etiam laoreet sed magna a consectetur. Duis eu faucibus lacus. Pellentesque ut scelerisque nunc. In vitae viverra orci. Curabitur mollis mauris eget enim varius, a aliquam dolor lobortis. Donec mauris dolor, porta id feugiat ac, blandit nec nisl. Nulla viverra quam quis consequat dapibus. Vivamus et ex lobortis, luctus tellus vitae, interdum dolor. Maecenas viverra auctor bibendum. Proin egestas sed massa id mattis. Etiam a ante semper nibh interdum bibendum.</p><br>
-					<a class="active">Continua a leggere...</a>
-            </div>
-        </div>
-        
+        </section>
+            
         <br><br><br><br><br><br>
         
         <footer class="footer">
@@ -194,7 +201,16 @@
         <script src="js/jquery.js"></script>
         <script src="js/drdown.js"></script>
         <script src="js/drdown2.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+        <script>$(document).ready(function(){
+                $("#notice-1").hide(); 
+                $("#show-btn").click(function()
+                {
+                    $("#notice-1").toggle("slow");
+                });
+            });</script>
+        <script>$("#show-btn").click(function(){
+                $("#show-btn").hide("high");
+            });</script>
         
     </body>
 </html>

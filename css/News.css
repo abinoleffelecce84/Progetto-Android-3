@@ -2,7 +2,7 @@ header{
     text-align: center;
     color: #ffffff;
     background-attachment: scroll;
-    background-image: url(../img/news.jpg);
+    background-image: url(../img/News.png);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -21,7 +21,8 @@ header{
     margin-bottom: 25px;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
-	color: black;
+	color: white;
+    text-shadow: 1px 1px #000000;
 }
 
 .intro-heading{
@@ -31,7 +32,8 @@ header{
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
-	color: black;
+	color: white;
+    text-shadow: 1px 1px #000000;
 }
 
 @media(min-width:768px){
