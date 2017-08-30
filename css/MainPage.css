@@ -106,11 +106,6 @@ h1,h2,h3,h4,h5{ /*all titles*/
     margin-bottom: 10%;
 }
 
-#title-caption-1{
-    position: relative;
-    right: 75px;
-}
-
 #title-caption-3{
     position: relative;
     left: 75px;
