@@ -1,0 +1,96 @@
+body{
+    position: relative;
+    top: 50px;
+}
+
+#container{
+    margin-top: 100px;
+}
+
+table{
+    margin-top: 40px;
+}
+
+th{
+    text-align: center;
+}
+
+#centrale{
+    position: relative;
+    top: 4px;
+}
+
+
+@media (min-width:1200px){
+    
+    
+    #login{
+        background-color: transparent;
+        padding: 16px;
+        background-image:url('../img/ing.png');
+        border: none;
+        cursor: pointer;
+        float: right;
+        position: relative;
+        top: 7px;
+        right: 20px;
+        display: inline-block;
+    }
+    
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+    #login{
+        background-color: transparent;
+        padding: 16px;
+        background-image:url('../img/ing.png');
+        border: none;
+        cursor: pointer;
+        float: right;
+        position: relative;
+        top: 7px;
+        right: 20px;
+        display: inline-block;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    #login{
+        background-color: transparent;
+        padding: 16px;
+        background-image:url('../img/ing.png');
+        border: none;
+        cursor: pointer;
+        float: right;
+        position: relative;
+        bottom: 73px;
+        right: 50px;
+        display: inline-block;
+    }
+    
+}
+
+
+@media (min-width: 100px) and (max-width: 767px) {
+    
+
+    
+}
+
+@media (min-width: 500px) and (max-width: 767px){
+    
+    
+    
+}
+
+@media (min-width: 100px) and (max-width: 499px){
+    
+    table{
+        position: relative;
+        right: 12px;
+    }
+    
+}

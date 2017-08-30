@@ -4,14 +4,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Benvenuto | WishCar</title>
+        <title>Storico Prenotazioni | WishCar</title>
         <meta name="description" content="Personal Website">
         <meta name="author" content="io">
         
         <!-- CSS references -->
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/MainPage.css" rel="stylesheet">
-        <link href="css/Loggato.css" rel="stylesheet">
+        <link href="css/Storico.css" rel="stylesheet">
         
         <!-- Custom Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -148,46 +148,55 @@
             
         <ol class="breadcrumb">
             <li><a href="Mainpage.html">Home</a></li>
-            <li><a class="active">Benvenuto</a></li>
+            <li><a href="Loggato.html">Benvenuto</a></li>
+            <li><a class="active">Storico Prenotazioni</a></li>
         </ol>
         
             <div class="cnt">
                 <div class="inner" id="form">
                     <div class="cnt">
-                        <h1>Benvenuto</h1>
+                        <h1>Storico Prenotazioni</h1>
                     </div>
-                    <p>Qui puoi controllare i dati relativi al tuo account e gestire le tue prenotazioni.</p>
+                    <p>Qui puoi controllare i dati relativi alle prenotazioni che hai già effettuato in passato.</p>
                     
                     <div id="container" class="cnt">
+                        
+                        <fieldset>
+                            <legend>Riordina per data:</legend>
+                            Ascendente <input type="radio">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Discentende <input type="radio"> 
+                            
+                        </fieldset>
+                        
                         <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Data</th>
+                                    <th>Numero Posti</th>
+                                    <th>Periodo</th>
+                                    <th>Luogo</th>
+                                </tr>
+                            </thead>
+                            
                             <tbody>
                                 <tr>
-                                    <td id="td">
-                                        <a href="Storico.html">     
-                                            <p id="centrale">Storico Prenotazioni</p>
-                                        </a>
-                                    </td>
+                                    <td>21.02.2017</td>
+                                    <td>4</td>
+                                    <td>21.02.2017 - 12.03.2017</td>
+                                    <td>Mestre</td>
                                 </tr>
                                 <tr>
-                                    <td id="td">
-                                        <a href="Impostazioni.html">     
-                                            <p id="centrale">Modifica Dati Personali</p>
-                                        </a>
-                                    </td>
+                                    <td>15.02.2017</td>
+                                    <td>4</td>
+                                    <td>15.02.2017 - 19.02.2017</td>
+                                    <td>Mestre</td>
                                 </tr>
                                 <tr>
-                                    <td id="td">
-                                        <a href="Prenota.html">
-                                            <p id="centrale">Effettua Nuova Prenotazione</p>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td id="td">
-                                        <a href="Mainpage.html">
-                                            <p id="centrale">Logout</p>
-                                        </a>
-                                    </td>
+                                    <td>10.01.2017</td>
+                                    <td>4</td>
+                                    <td>11.02.2017 - 14.02.2017</td>
+                                    <td>Mestre</td>
                                 </tr>
                             </tbody>
                         </table>
