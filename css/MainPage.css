@@ -726,9 +726,15 @@ h1,h2,h3,h4,h5{ /*all titles*/
         left: 180px;
     }
     
+    #accedi-xl{
+        position: relative;
+        right: 3px;
+    }
+    
     #accedi-text{
         position: relative;
         left: 31%;
+        margin-bottom: 70px;
     }
     
     #prenota{
@@ -740,6 +746,12 @@ h1,h2,h3,h4,h5{ /*all titles*/
     #prenota-text{
         position: relative;
         left: 31%;
+        margin-bottom: 70px;
+    }
+    
+    #prenota-xl{
+        position: relative;
+        right: 3px;
     }
     
     #guida{
@@ -751,6 +763,11 @@ h1,h2,h3,h4,h5{ /*all titles*/
     #guida-text{
         position: relative;
         left: 31%;
+    }
+    
+    #guida-xl{
+        position: relative;
+        right: 8px;
     }
     
     #smart,#standard{
@@ -854,6 +871,24 @@ h1,h2,h3,h4,h5{ /*all titles*/
     
     .square-content{
         margin-bottom: 20px;
+    }
+    
+    #accedi{
+        margin-bottom: 70px;
+    }
+    
+    #accedi-md{
+        position: relative;
+        left: 3px;
+    }
+    
+    #prenota{
+        margin-bottom: 70px;
+    }
+    
+    #guida-md{
+        position: relative;
+        left: 3px;
     }
     
     #accedi-xl{
