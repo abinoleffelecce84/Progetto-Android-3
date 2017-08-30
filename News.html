@@ -21,88 +21,123 @@
     <body id="page-top">
         
         <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header page-scroll">
-
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <!-- barrette -->
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-            <a class="navbar-brand page-scroll" href="Mainpage.html" id="title">Nome dell'azienda</a>
-
-          </div>
-
-          <div class="collapse navbar-collapse" id=".navbar-collapse" id="hidden-collapse"> <!-- <== mobile version -->
-            <ul class="nav navbar-nav navbar-right">
-             <!-- title -->
-              <li class="hidden">
-                <a href="#page-top"></a>
-              </li>
-              <!-- lateral voices -->
-              <li>
-              <a class="page-scroll" href="Mappa.html">Mappa</a>
-              </li>
-
-              <li>
-                <a class="page-scroll" href="Autodisp.html">Auto Disponibili</a>
-              </li>
-
-              <li>
-                <a class="page-scroll" href="#featurettes">Servizio</a>
-              </li>
-
-              <li>
-                <a class="page-scroll" href="Contattaci.html">Su di Noi</a>
-              </li>
-
-              <li>
-                <a class="page-scroll" href="#featurettes">News</a>
-              </li>
-
-              <li>
-                <a class="page-scroll" href="#featurettes">Come Funziona</a>
-              </li>
-
-              <li>
-                <a class="page-scroll" href="prenota.html">Prenota</a>
-              </li>
-
-              <li>
-                 <form id="qm-form" class="navbar-form" role="search">
-                   <div class="input-group">
-                     <input type="text" class="form-control" placeholder="Cerca nel sito...">
-                       <div class="input-group-btn">
-                         <button id="btn-check" class="btn btn-default" type="button"></button>
-                       </div>
-                    </div>
-                 </form>
-              </li>
-
-              <li id="dropdown">
-                <div class="dropdown" id="drop">
-                  <button onclick="myFunction()" class="dropbtn"></button>
-                  <div id="myDropdown" class="dropdown-content">
-                    <form class="form" role="search">
-                      <div class="input-group">
-                       <input type="text" class="form-control" placeholder="Cerca nel sito...">
-                       <div class="input-group-btn">
-                         <button id="btn-check" class="btn btn-default" type="button"></button>
-                       </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </li>
-
-              <li><button id="login" class="btn btn-default" type="button"</li>
-
-            </ul>
-          </div>
-        </div>
-      </nav>
+             <div class="container">
+                 <div class="navbar-header page-scroll">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>                    
+                     </button>
+                     <a class="navbar-brand page-scroll" href="Mainpage.html" id="title">WishCar</a>
+                 </div>
+                 <div class="collapse navbar-collapse" id=".navbar-collapse" id="hidden-collapse">
+                     <ul class="nav navbar-nav navbar-right">
+                         
+                         <li class="hidden">
+                             <a href="#page-top"></a>
+                         </li>
+                         
+                         <li>
+                             <a class="page-scroll" href="Mappa.html">Mappa</a>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="Autodisp.html">Auto Disponibili</a>
+                         </li>
+                         <li id="dropdown-dsk">
+                             <div class="dropdown">
+                                <a class="dropbtn" id="myDrop2" onclick="myFunction2()">Servizio</a>
+                                <font class="row" size="1" id="freccia">&#9699</font>
+                                <div id="myDropdown2" class="dropdown-content-form">
+                                    <div class="input-group">
+                                         <div align="center"><a href="Opinioni.html">Opinioni</a></div>
+                                         <div align="center"><a href="Mainpage.html #Tariffe">Tariffe</a></div>
+                                         <div align="center"><a href="Contattaci.html">Contattaci</a></div>
+                                         <div align="center"><a href="HoUnProblema.html">Ho un problema</a></div>
+                                    </div>
+                                </div>
+                             </div>
+                         </li>
+                         <li id="dropdown-mob">
+                            <a id="servizio" href="Mainpage.html #">Servizio</a>
+                             <ul>
+                                <li><a id="servizio" href="Opinioni.html">Opinioni</a></li>
+                                <li><a href="Mainpage.html #Tariffe">Tariffe</a></li>
+                                <li><a href="Contattaci.html">Contatti</a></li>
+                                <li><a href="HoUnProblema.html">Ho un problema</a></li>
+                             </ul>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="Mainpage.html #sudinoi">Su di Noi</a>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="Mainpage.html #news">News</a>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="Mainpage.html #funzionamento">Come Funziona</a>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="Prenota.html">Prenota</a>
+                         </li>
+                         <li>
+                             <form id="qm-form" class="navbar-form" role="search">
+                                 <fieldset class="text-left" id="checkbox">
+                                         <legend id="checkbox">Effettua ricerca in:</legend>
+                                         <div class="col-xs-11" id="input-box">
+                                             <input id="input" type="checkbox" name="autodisp"/>
+                                                    Auto Disponibili<br>
+                                             <input id="input" type="checkbox" name="mappa"/>
+                                                    Mappa<br>
+                                             <input id="input" type="checkbox" name="news"/>
+                                                    News<br>
+                                             <input id="input" type="checkbox" name="contatti"/>
+                                                    Contatti<br>
+                                         </div>
+                                 </fieldset>
+                                 <div id="searching-xs" class="input-group">
+                                   <input type="text" class="form-control" placeholder="Cerca nel sito...">
+                                   <div class="input-group-btn">
+                                     <a href="Ricerca.html">
+                                        <button id="btn-check" class="btn btn-default" type="button"></button>
+                                     </a>
+                                   </div>
+                                 </div>
+                             </form>
+                         </li>
+                         <li id="dropdown">
+                             <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn" id="myDrop"></button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <form class="form" role="search">
+                                        <input type="text" id="searching" name="password" type="text" placeholder="Cerca nel sito..." class="form-control">
+                                        <div class="input-group">
+                                           <a class="col-xs-1" href="Ricerca.html">
+                                              <button id="btn-vai" class="btn btn-default" type="button">Vai</button>
+                                           </a>
+                                        </div>
+                                    </form>
+                                    <fieldset class="text-left" id="checkbox">
+                                        <legend id="checkbox"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Effettua ricerca in:</legend>
+                                         <div class="col-xs-11" id="input-box">
+                                             <input id="input" type="checkbox" name="autodisp"/>
+                                                    Auto Disponibili<br>
+                                             <input id="input" type="checkbox" name="mappa"/>
+                                                    Mappa<br>
+                                             <input id="input" type="checkbox" name="news"/>
+                                                    News<br>
+                                             <input id="input" type="checkbox" name="contatti"/>
+                                                    Contatti<br>
+                                         </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                         </li>
+                         <a href="Accedi.html">
+                           <button id="login" class="btn btn-default" type="button"></button>
+                         </a>
+                     </ul>
+                 </div>
+             </div>
+         </nav>
             
         <header>
             <div class="container">
