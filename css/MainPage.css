@@ -1,3 +1,12 @@
+#colorbotton{
+    color: #fed136;
+}
+
+#sfondo{
+    background-color: black;
+}
+
+
 body{ /*general view of the webpage*/
     font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: bisque;
@@ -6,6 +15,14 @@ body{ /*general view of the webpage*/
 p{
     font-size: 14px;
     line-height: 1.75;
+}
+
+#intro-lead-in{
+    font-style: italic;
+    line-height: 18px;
+    margin-bottom: 25px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
 }
 
 #checkbox{
