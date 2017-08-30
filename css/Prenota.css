@@ -25,9 +25,10 @@ header{
 
 .intro-heading{
     margin-bottom: 25px;
+    text-shadow: 1px 1px #000000;
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 50px;
 }
@@ -67,6 +68,11 @@ p{
     line-height: 33px;
 }
 
+#txt, #data{
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
 #section{
   padding: inherit;
   position: relative;
@@ -91,4 +97,26 @@ p{
 footer{
   height: 50%;
   clear: both;
+}
+
+.cnt{
+    text-align: center;
+}
+
+
+.inner{
+    display: inline-block;
+    text-align: center;
+    padding: 50px;
+}
+
+.inn{
+    text-align: justify;
+    display: inline-block;
+    padding: 50px;
+}
+
+#form{
+    position: relative;
+    top: 50px;    
 }
