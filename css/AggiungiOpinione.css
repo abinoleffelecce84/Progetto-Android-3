@@ -25,12 +25,14 @@ header{
 
 .intro-heading{
     margin-bottom: 25px;
+    text-shadow: 1px 1px #000000;
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 50px;
 }
+
 
 @media(min-width:768px){
     
