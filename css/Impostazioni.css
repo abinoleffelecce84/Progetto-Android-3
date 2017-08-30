@@ -81,13 +81,7 @@ th{
 
 @media (min-width: 100px) and (max-width: 767px) {
     
-    body{
-        padding-top: 100px;
-    }
-    
-    #title-storico{
-        font-size: 28px;
-    }
+
     
 }
 
