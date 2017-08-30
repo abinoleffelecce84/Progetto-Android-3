@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Storico Prenotazioni | WishCar</title>
+        <title>Impostazioni | WishCar</title>
         <meta name="description" content="Personal Website">
         <meta name="author" content="io">
         
@@ -149,29 +149,18 @@
         <ol class="breadcrumb">
             <li><a href="Mainpage.html">Home</a></li>
             <li><a href="Loggato.html">Benvenuto</a></li>
-            <li><a class="active">Storico Prenotazioni</a></li>
+            <li><a class="active">Impostazioni</a></li>
         </ol>
         
             <div class="cnt">
                 <div class="inner" id="form">
                     <div class="cnt">
-                        <h1>Storico Prenotazioni</h1>
+                        <h1>Impostazioni</h1>
                     </div>
-                    <p>Qui puoi controllare i dati relativi alle prenotazioni che hai già effettuato in passato.</p>
-                    <a href="#table">
-                        <button id="btn-send" class="btn btn-default" type="button"><img src="img/download-btn.png"></button>
-                    </a>
+                    <p>Qui puoi modificare i tuoi dati personali</p>
                     
                     <div id="container" class="cnt">
-                        
-                        <fieldset>
-                            <legend>Riordina per data:</legend>
-                            Ascendente <input type="radio">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            Discentende <input type="radio"> 
-                            
-                        </fieldset>
-                        
+                    
                         <section id="results">
                         
                             <table class="table table-striped">
@@ -238,12 +227,6 @@
         <script src="js/jquery.js"></script>
         <script src="js/drdown.js"></script>
         <script src="js/drdown2.js"></script>
-        <script>$(document).ready(function(){
-                $("#results").hide(); 
-                $("#btn-send").click(function(){
-                   $("#results").toggle("slow"); 
-                });
-            });</script>
         
     </body>
     

@@ -36,12 +36,6 @@ th{
         display: inline-block;
     }
     
-    #btn-send{
-        position: relative;
-        top: 185px;
-        left: 185px;
-    }
-    
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -79,7 +73,7 @@ th{
 }
 
 
-@media (min-width: 100px) and (max-width: 767px) {
+@media (min-width: 250px) and (max-width: 767px) {
     
     body{
         padding-top: 100px;
@@ -91,17 +85,21 @@ th{
     
 }
 
-@media (min-width: 500px) and (max-width: 767px){
-    
-    
-    
-}
-
-@media (min-width: 100px) and (max-width: 499px){
+@media (min-width: 250px) and (max-width: 499px){
     
     table{
         position: relative;
         right: 12px;
+    }
+    
+}
+
+@media (min-width: 250px){
+    
+    #btn-send{
+        position: relative;
+        top: 230px;
+        
     }
     
 }
