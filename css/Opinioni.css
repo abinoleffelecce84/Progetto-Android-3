@@ -10,6 +10,60 @@ header{
     background-size: cover;
 }
 
+p {
+    line-height: 33px;
+}
+
+
+.star-ratings-sprite {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
+  font-size: 0;
+  height: 21px;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 110px;
+  display: inline-block;
+
+  
+}
+.star-ratings-sprite-rating {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
+  background-position: 0 100%;
+  float: left;
+  height: 21px;
+  display:inline-block;
+  }
+
+
+.detailBox {
+    width:auto;
+    border:1px solid #bbb;
+    margin:50px;
+}
+.titleBox {
+    background-color:#fdfdfd;
+    padding:10px;
+}
+.titleBox label{
+  color:#444;
+  font-size:18px;
+  position: absolute;
+  margin-left: 5px;
+  display:inline-block;
+}
+
+.commentBox {
+    padding:10px;
+    border-top:1px solid #bbb;
+    background-color: #fff;
+}
+
+.taskDescription {
+    margin-top:10px 0;
+}
+
+
 .intro-text{
     padding-top: 100px;
     padding-bottom: 50px;
@@ -25,9 +79,10 @@ header{
 
 .intro-heading{
     margin-bottom: 25px;
+    text-shadow: 1px 1px #000000;
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 50px;
 }
@@ -44,7 +99,7 @@ header{
         font-style: italic;
         line-height: 40px;
     }
-    
+
     .intro-heading{
         margin-bottom: 50px;
         font-size: 75px;
@@ -53,6 +108,7 @@ header{
     }
     
 }
+
 
 .breadcrumb{
     background: #222;
@@ -64,5 +120,22 @@ header{
 }
 
 .panel-body >h1,h2,h3,h4,h5{
-    display: inline;
+    display: inline-flex;
+    margin: auto;
 }
+
+.panel{
+    margin-top: 50px;
+}
+
+
+.cnt{
+    text-align: center;
+}
+
+.inner{
+    display: inline-block;
+    text-align: center;
+    padding: 50px;
+}
+
