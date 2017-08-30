@@ -113,10 +113,10 @@ footer{
 .inn{
     text-align: justify;
     display: inline-block;
-    padding: 50px;
+
 }
 
 #form{
-    position: relative;
+
     top: 50px;    
 }
