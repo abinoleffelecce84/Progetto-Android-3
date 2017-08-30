@@ -139,3 +139,13 @@ p {
     padding: 50px;
 }
 
+@media (max-width: 499px) and (min-width: 100px){
+    .titleBox{
+        font-size: 10px;
+        position: relative;
+        height: 55px;
+    }
+    .star-ratings-sprite{
+        display: none;
+    }
+}
