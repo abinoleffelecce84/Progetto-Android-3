@@ -1,13 +1,7 @@
 header{
     text-align: center;
     color: #ffffff;
-    background-attachment: scroll;
-    background-image: url(../img/header-bg.png);
-    background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
+
 }
 
 .navbar-default{ /*navbar on the mobile version*/
