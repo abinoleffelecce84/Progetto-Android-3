@@ -9,6 +9,7 @@ body{
 
 table{
     margin-top: 40px;
+    background-color: white;
 }
 
 th{
@@ -34,12 +35,6 @@ th{
         top: 7px;
         right: 20px;
         display: inline-block;
-    }
-    
-    #btn-send{
-        position: relative;
-        top: 185px;
-        left: 185px;
     }
     
 }
@@ -93,9 +88,31 @@ th{
 
 @media (min-width: 100px) and (max-width: 499px){
     
+    #body{
+        margin-top: 100px;
+    }
+    
+    #title-imp{
+        font-size: 28px;
+    }
+    
+    #buttons{
+        position: relative;
+        left: 10px;
+    }
+    
     table{
         position: relative;
         right: 12px;
+    }
+    
+    #pass{
+        margin-left: 35px;
+    }
+    
+    #change{
+        position: relative;
+        right: 15px;
     }
     
 }

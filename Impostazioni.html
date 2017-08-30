@@ -29,7 +29,7 @@
                          <span class="icon-bar"></span>
                          <span class="icon-bar"></span>                    
                      </button>
-                     <a class="navbar-brand page-scroll" href="#page-top" id="title">WishCar</a>
+                     <a class="navbar-brand page-scroll" href="Mainpage.html" id="title">WishCar</a>
                  </div>
                  <div class="collapse navbar-collapse" id=".navbar-collapse" id="hidden-collapse">
                      <ul class="nav navbar-nav navbar-right">
@@ -71,7 +71,7 @@
                              <a class="page-scroll" href="#sudinoi">Su di Noi</a>
                          </li>
                          <li>
-                             <a class="page-scroll" href="#news">News</a>
+                             <a class="page-scroll" href="News.html">News</a>
                          </li>
                          <li>
                              <a class="page-scroll" href="#funzionamento">Come Funziona</a>
@@ -146,54 +146,83 @@
     
         <section id="body" class="container text-center">
             
-        <ol class="breadcrumb">
-            <li><a href="Mainpage.html">Home</a></li>
-            <li><a href="Loggato.html">Benvenuto</a></li>
-            <li><a class="active">Impostazioni</a></li>
-        </ol>
+            <ol class="breadcrumb">
+                <li><a href="Mainpage.html">Home</a></li>
+                <li><a href="Loggato.html">Benvenuto</a></li>
+                <li><a class="active">Impostazioni</a></li>
+            </ol>
         
             <div class="cnt">
                 <div class="inner" id="form">
                     <div class="cnt">
-                        <h1>Impostazioni</h1>
+                        <h1 id="title-imp">Impostazioni</h1>
                     </div>
                     <p>Qui puoi modificare i tuoi dati personali</p>
                     
                     <div id="container" class="cnt">
-                    
-                        <section id="results">
                         
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Data</th>
-                                        <th>Numero Posti</th>
-                                        <th>Periodo</th>
-                                        <th>Luogo</th>
-                                    </tr>
-                                </thead>
+                        <section id="message">
+                            <p>Eliminato</p>
+                        </section>
+                        
+                        <section id="change">
+                            <h2>Cambia la tua password</h2><br>
+                            <div class="form-group">
+                                <label class="col-xs-3 control-label" for="name" align="left">Password Precedente*</label>
+                                <div class="col-xs-9" id="form-label">
+                                    <input id="pass" name="pass" type="password" placeholder="Vecchia Password" class="form-control">
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="form-group">
+                                <label class="col-xs-3 control-label" for="name" align="left">Password Nuova*</label>
+                                <div class="col-xs-9" id="form-label">
+                                    <input id="pass" name="name" type="password" placeholder="Password" class="form-control">
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="form-group">
+                                <label class="col-xs-3 control-label" for="name" align="left">Conferma Password*</label>
+                                <div class="col-xs-9" id="form-label">
+                                    <input id="pass" name="name" type="password" placeholder="Re-Password" class="form-control">
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="form-group">
+                                <div class="col-xs-8 col-xs-offset-3">
+                                    <a id="confirm" href="Impostazioni.html">
+                                        <button type="submit" class="btn btn-primary btn-lg" id="buttonsubmit">Conferma</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    
+                        <section id="buttons">
+                            <table class="table">
                                 <tbody>
                                     <tr>
-                                        <td>21.02.2017</td>
-                                        <td>4</td>
-                                        <td>21.02.2017 - 12.03.2017</td>
-                                        <td>Mestre</td>
+                                        <td id="td">
+                                            <a id="btn-change" href="#">
+                                                <p id="centrale">Cambia Password</p>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>15.02.2017</td>
-                                        <td>4</td>
-                                        <td>15.02.2017 - 19.02.2017</td>
-                                        <td>Mestre</td>
+                                        <td id="td">
+                                            <a id="btn-send" href="#">
+                                                <p id="centrale">Elimina Numero Carta</p>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>10.01.2017</td>
-                                        <td>4</td>
-                                        <td>11.02.2017 - 14.02.2017</td>
-                                        <td>Mestre</td>
+                                        <td id="td">
+                                            <a href="Mainpage.html">
+                                                <p id="centrale">Elimina Account</p>
+                                            </a>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
-                            
                         </section>
                         
                     </div>
@@ -227,7 +256,22 @@
         <script src="js/jquery.js"></script>
         <script src="js/drdown.js"></script>
         <script src="js/drdown2.js"></script>
-        
+        <script>
+            $(document).ready(function(){
+                $("#message").hide(); 
+                $("#btn-send").click(function(){
+                   $("#message").toggle("high"); 
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#change").hide(); 
+                $("#btn-change").click(function(){
+                   $("#change").toggle("high"); 
+                });
+            });
+        </script>                
     </body>
     
 </html>
