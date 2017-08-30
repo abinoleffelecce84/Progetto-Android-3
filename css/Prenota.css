@@ -101,6 +101,8 @@ footer{
 
 .cnt{
     text-align: center;
+    position: relative;
+    right: 2px;
 }
 
 
@@ -117,6 +119,5 @@ footer{
 }
 
 #form{
-
     top: 50px;    
 }
