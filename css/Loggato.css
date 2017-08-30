@@ -1,153 +1,89 @@
-.navbar-default{ /*navbar on the mobile version*/
-    border-color: transparent;
-    background-color: #222;
-}
-
-.navbar-default .navbar-brand{ /*title brand on both versions*/
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: white;
-    margin: auto;
-}
-
-#btn-check{
-    background: url(../img/download.png);
-    width: 34px;
-    height: 34px;
-}
-
-.intro-text{
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-
-.intro-lead-in{
-    font-style: italic;
-    line-height: 18px;
-    margin-bottom: 25px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 18px;
-}
-
-.intro-heading{
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 50px;
-}
-
-#logged{
-    background-color: transparent;
-    padding: 16px;
-    background-image: url(../img/ing.png);    
-    border: none;
-    cursor: pointer;
-    float: right;
+body{
     position: relative;
-    top: 7px;
-    right: 20px;
-    display: inline-block;
+    top: 50px;
 }
 
-#breadcrumb{
-    background-color: transparent;
-    color: white;
+table{
+    margin-top: 100px;
 }
 
-@media(min-width:768px){
-    
-    .intro-text{
-        padding-top: 300px;
-        padding-bottom: 200px;
-    }
-    
-    .intro-lead-in{
-        font-size: 40px;
-        font-style: italic;
-        line-height: 40px;
-    }
-    
-    .intro-heading{
-        margin-bottom: 50px;
-        font-size: 75px;
-        font-weight: 700px;
-        line-height: 75px;
-    }
-    
+#td {
+    background-color: white;    
 }
 
-.breadcrumb{
-    background: #222;
-    border-radius: 0;
-}
-
-.form-group .control-label{
-    font-size: 15px;
-}
-
-p{
-    line-height: 33px;
-}
-
-#email, #password{
-    padding: 10px;
-    height: auto;
-    margin-bottom: 15px;
-}
-
-#buttonsubmit{
-    background-color: #cea532;
-    border: transparent;
-    text-transform: uppercase;
-    margin: 15px;
-}
-
-#buttonsubmit, #buttonsubmit:hover{
-    background-color: #cea532;
-    border: transparent;
-    text-transform: uppercase;
-}
-
-#buttonsubmit: active{
-    background-color: #c3d369;
-}
-
-@media (min-width: 300px) and (max-width: 490px) {
-    
-    .control-label{
-        position: relative;
-        right: 40px;
-    }
-    
-    .form-group{
-        position: relative;
-        left: 35px;
-    }
-    
-    #buttonsubmit{
-        position: relative;
-        right: auto;
-    }
-    
-}
-
-#form{
+#centrale{
     position: relative;
-    top: 50px;    
+    top: 4px;
 }
 
-.form-label{
-    position: relative;
+
+@media (min-width:1200px){
+    
+    
+    #login{
+        background-color: transparent;
+        padding: 16px;
+        background-image:url('../img/ing.png');
+        border: none;
+        cursor: pointer;
+        float: right;
+        position: relative;
+        top: 7px;
+        right: 20px;
+        display: inline-block;
+    }
     
 }
 
-.cnt{
-    text-align: center;
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+    #login{
+        background-color: transparent;
+        padding: 16px;
+        background-image:url('../img/ing.png');
+        border: none;
+        cursor: pointer;
+        float: right;
+        position: relative;
+        top: 7px;
+        right: 20px;
+        display: inline-block;
+    }
+
 }
 
-.inner{
-    display: inline-block;
-    text-align: center;
-    padding: 50px;
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    #login{
+        background-color: transparent;
+        padding: 16px;
+        background-image:url('../img/ing.png');
+        border: none;
+        cursor: pointer;
+        float: right;
+        position: relative;
+        bottom: 73px;
+        right: 50px;
+        display: inline-block;
+    }
+    
+}
+
+
+@media (min-width: 100px) and (max-width: 767px) {
+    
+
+    
+}
+
+@media (min-width: 500px) and (max-width: 767px){
+    
+    
+    
+}
+
+@media (min-width: 100px) and (max-width: 499px){
+    
+    
+    
 }
