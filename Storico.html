@@ -178,7 +178,6 @@
                                     <th>Luogo</th>
                                 </tr>
                             </thead>
-                            
                             <tbody>
                                 <tr>
                                     <td>21.02.2017</td>
@@ -231,6 +230,12 @@
         <script src="js/jquery.js"></script>
         <script src="js/drdown.js"></script>
         <script src="js/drdown2.js"></script>
+        <script>$(document).ready(function(){
+                $("#results").hide(); 
+                $("#btn-send").click(function(){
+                   $("#results").toggle("slow"); 
+                });
+            });</script>
         
     </body>
     
