@@ -77,10 +77,6 @@ h6{
 
 @media (min-width: 300px) and (max-width: 490px) {
     
-    #title-reg{
-        font-size: 28px;
-    }
-    
     .control-label{
         position: relative;
         right: 40px;
@@ -104,9 +100,10 @@ h6{
         font-size: 28px;
     }
     
-    #form-reg{
+    #body{
         position: relative;
-        right: 5px;
+        right: 15px;
+        top: 50px;
     }
 
     label{
@@ -121,16 +118,21 @@ h6{
     
     #buttonsubmit{
         position: relative;
-        right: 50px;
-        padding: 10px;
+        right: 30px;
+        padding: 7px;
     }
     
-    #ca{
+    #intro1{
         font-size: 25px;
     }
     
-    #ca2{
+    #intro2{
         font-size: 15px;
+    }
+    
+    #intro1, #intro2{
+        position: relative;
+        right: 10px;
     }
     
     .TandC{

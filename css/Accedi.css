@@ -126,6 +126,39 @@ p{
     
 }
 
+@media (min-width: 100px) and (max-width: 490px){
+    
+    #intro1{
+        font-size: 25px;
+    }
+    
+    #intro2{
+        font-size: 15px;
+    }
+    
+    #body{
+        position: relative;
+        right: 10px;
+        top: 50px;
+    }
+    
+    #buttonsubmit{
+        position: relative;
+        right: 30px;
+    }
+    
+    label{
+        position: relative;
+        right: 40px;
+    }
+    
+    #form-label{
+        position: relative;
+        left: 18px;
+    }
+    
+}
+
 #form{
     position: relative;
     top: 50px;    
