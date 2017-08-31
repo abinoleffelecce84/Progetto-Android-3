@@ -36,28 +36,6 @@ header{
     text-shadow: 1px 1px #000000;
 }
 
-@media(min-width:768px){
-
-    .intro-text{
-        padding-top: 300px;
-        padding-bottom: 200px;
-    }
-
-    .intro-lead-in{
-        font-size: 40px;
-        font-style: italic;
-        line-height: 40px;
-    }
-
-    .intro-heading{
-        margin-bottom: 50px;
-        font-size: 75px;
-        font-weight: 700px;
-        line-height: 75px;
-    }
-
-}
-
 .breadcrumb{
     background: #222;
     border-radius: 0;
@@ -95,4 +73,26 @@ p{
 footer{
   height: 50%;
   clear: both;
+}
+
+@media(min-width:768px){
+
+    .intro-text{
+        padding-top: 300px;
+        padding-bottom: 200px;
+    }
+
+    .intro-lead-in{
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+    }
+
+    .intro-heading{
+        margin-bottom: 50px;
+        font-size: 75px;
+        font-weight: 700px;
+        line-height: 75px;
+    }
+
 }
