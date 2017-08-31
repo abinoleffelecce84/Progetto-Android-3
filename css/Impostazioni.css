@@ -90,6 +90,31 @@ th{
         right: 12px;
     }
     
+    #change{
+        position: relative;
+        bottom: 65px;
+    }
+    
+    #change-title{
+        position: relative;
+        left: 12px;
+    }
+    
+    #add-card-title{
+        position: relative;
+        bottom: 70px;
+    }
+    
+    #add-card{
+        position: relative;
+        right: 20px;
+    }
+    
+    #form-label-adds{
+        position: relative;
+        left: 20px;
+    }
+    
     #pass{
         margin-left: 35px;
     }

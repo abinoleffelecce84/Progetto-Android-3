@@ -1,3 +1,8 @@
+function autoRefresh_div()
+{
+	window.location.reload();
+}
+
 $(document).ready(function()
             {
                 $("#message").hide();
@@ -9,7 +14,10 @@ $(document).ready(function()
                         if($("#message").is(":visible"))
                         {
                             $("#message").slideToggle();
-                        } else {}
+							
+                        } else { setInterval(autoRefresh_div()); }
+				
                     },2000);
+					
                 });
             });
