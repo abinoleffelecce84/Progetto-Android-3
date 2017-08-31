@@ -77,6 +77,10 @@ h6{
 
 @media (min-width: 300px) and (max-width: 490px) {
     
+    #title-reg{
+        font-size: 28px;
+    }
+    
     .control-label{
         position: relative;
         right: 40px;
@@ -90,6 +94,48 @@ h6{
     #buttonsubmit{
         position: relative;
         right: auto;
+    }
+    
+}
+
+@media (min-width: 100px) and (max-width: 490px) {
+    
+    #title-reg{
+        font-size: 28px;
+    }
+    
+    #form-reg{
+        position: relative;
+        right: 25px;
+    }
+
+    label{
+        position: relative;
+        right: 40px;
+    }
+    
+    #form-label{
+        position: relative;
+        left: 18px;
+    }
+    
+    #buttonsubmit{
+        position: relative;
+        right: 50px;
+        padding: 10px;
+    }
+    
+    #ca{
+        font-size: 25px;
+    }
+    
+    #ca2{
+        font-size: 15px;
+    }
+    
+    .TandC{
+        position: relative;
+        right: 9px;
     }
     
 }
