@@ -3,12 +3,9 @@ body{
     top: 50px;
 }
 
-#container{
-    margin-top: 100px;
-}
-
 table{
-    margin-top: 40px;
+    margin-top: 13px;
+    margin-left: 2px;
     background-color: white;
 }
 
@@ -70,19 +67,6 @@ th{
         right: 50px;
         display: inline-block;
     }
-    
-}
-
-
-@media (min-width: 100px) and (max-width: 767px) {
-    
-
-    
-}
-
-@media (min-width: 500px) and (max-width: 767px){
-    
-    
     
 }
 
