@@ -1,11 +1,33 @@
+#albero{
+    position: relative;
+    bottom: 280px;
+    left: 900px;
+}
+
+#newsstaz{
+    position: relative;
+    right: 360px;
+}
+
+#staz{
+    position: relative;
+    top: 300px;
+    
+}
+
 body{ /*general view of the webpage*/
     font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: bisque;
+    
+    overflow-x: hidden;
 }
 
 p{
     font-size: 14px;
     line-height: 1.75;
+}
+
+.carousel-slide{
+    position: fixed;
 }
 
 #intro-lead-in{
@@ -129,7 +151,6 @@ h1,h2,h3,h4,h5{ /*all titles*/
     }
     
     #myDropdown{
-        
         border-top-left-radius: 15px;
         border-bottom-right-radius: 15px;
     }
@@ -150,8 +171,44 @@ h1,h2,h3,h4,h5{ /*all titles*/
 
 }
 
-@media (min-width:1200px){
+@media (min-width:768px){
     
+    #container-sfondo{
+        height: 105%;
+        width: 105%;
+        position: relative;
+        right: 35px;
+        background-color: bisque;
+    }
+        
+    .custom-image{
+        height: 100%;
+        width: 101%;
+        background: url(../img/slider-2.png);
+        background-position: center center;
+        position: fixed;
+        right: 0;
+        top: 46px;
+        -webkit-filter: blur(1px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(3px);
+        
+    }
+    
+    #fluid{
+        position: relative;
+        bottom: 850px;
+        color: white;
+    }
+    
+    
+    
+}
+
+@media (min-width:1200px){
+        
     #mobile{
         display: none;
     }
@@ -250,6 +307,12 @@ h1,h2,h3,h4,h5{ /*all titles*/
         display: inline-block;
     }
 
+    #blur{
+        background-color: white;
+        height: 100px;
+        width: 10px;
+    }
+
     .dropdown-content {
         background-color: rgba(10,10,10,0.8);
         position: absolute;
@@ -304,11 +367,6 @@ h1,h2,h3,h4,h5{ /*all titles*/
     
     #welc-xs-form{
         display: none;
-    }
-    
-    #myCarousel{
-        position: relative;
-        top: 50px;
     }
     
     #news{
@@ -796,15 +854,15 @@ h1,h2,h3,h4,h5{ /*all titles*/
     
 }
 
-@media (max-width: 796px) {
+@media (min-width: 100px) and (max-width: 767px) {
     
-    #newsstaz{
+    #fluid, #contenitore, #br{
         display: none;
     }
     
-}
-
-@media (min-width: 100px) and (max-width: 767px) {
+    #container-sfondo{
+        background-color: bisque;
+    }
     
     #dropdown-dsk{
         display: none;
