@@ -1,7 +1,3 @@
-body{
-    background-color: bisque;
-}
-
 header{
     text-align: center;
     color: #ffffff;
@@ -14,6 +10,14 @@ header{
     background-size: cover;
 }
 
+body{
+ 
+    background-color: bisque;
+ 
+}
+ 
+
+ 
 #lorem{
     text-align: justify;
 }
