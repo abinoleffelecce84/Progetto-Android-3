@@ -1,20 +1,3 @@
-#albero{
-    position: relative;
-    bottom: 280px;
-    left: 900px;
-}
-
-#newsstaz{
-    position: relative;
-        
-}
-
-#staz{
-    position: relative;
-    top: 300px;
-    
-}
-
 body{ /*general view of the webpage*/
     font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
     
@@ -395,6 +378,11 @@ h1,h2,h3,h4,h5{ /*all titles*/
         position: relative;
         left: 11%;
     }
+    
+    #newsstaz{
+        position: relative;
+        left: 50px;
+    }
 
 }
 
@@ -603,6 +591,11 @@ h1,h2,h3,h4,h5{ /*all titles*/
     
     #Smart-xs, #Standard-xs, #Premium-xs, #Smart-md, #Standard-md, #Premium-md{
         display: none;
+    }
+    
+    #newsstaz{
+        position: relative;
+        left: 50px;
     }
     
 }
@@ -847,10 +840,18 @@ h1,h2,h3,h4,h5{ /*all titles*/
         display: none;
     }
     
+    #newsstaz{
+        position: relative;
+        left: 50px;
+    }
+    
+    #footer{
+        width: 850px;
+    }
+    
 }
 
 @media (min-width: 100px) and (max-width: 767px) {
-    
     #fluid, #contenitore, #br{
         display: none;
     }
@@ -912,6 +913,7 @@ h1,h2,h3,h4,h5{ /*all titles*/
     #welcome-xs{
         position: absolute;
         top: 50px;
+        right: 0;
     }
     
     #welc-form{
@@ -964,6 +966,22 @@ h1,h2,h3,h4,h5{ /*all titles*/
         display: none;
     }
     
+    #Smart-xs, #Standard-xs, #Premium-xs{
+        box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    
+    #newsstaz{
+        position: relative;
+        left: 20px;
+        top: 20px;
+    }
+    
+    #footer{
+        width: 850px;
+        position: relative;
+        right: 15px;
+    }
+    
 }
 
 @media (min-width: 500px) and (max-width: 767px){
@@ -981,14 +999,19 @@ h1,h2,h3,h4,h5{ /*all titles*/
         bottom: 110px;
     }
     
-}
-
-@media (min-width: 100px) and (max-width: 499px){
-    
     #welc-form{
         font-size: 30px;
         position: relative;
-        bottom: 30px;
+        bottom: 100px;
+    }
+    
+}
+
+@media (min-width: 100px) and (max-width: 499px){
+    #welc-form{
+        font-size: 30px;
+        position: relative;
+        bottom: 100px;
     }
     
     #body{
