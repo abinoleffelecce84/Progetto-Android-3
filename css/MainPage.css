@@ -1105,3 +1105,9 @@ img::selection{
 img::moz-selection{
     background: 0 0;
 }
+
+#tc{
+    text-align: center;
+    margin-top: -60px;
+    
+}
