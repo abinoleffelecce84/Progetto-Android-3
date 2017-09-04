@@ -966,7 +966,7 @@ h1,h2,h3,h4,h5{ /*all titles*/
         display: none;
     }
     
-    #Smart-xs, #Standard-xs, #Premium-xs{
+    #Smart-xs, #Smart-md, #Standard-xs, #Standard-md, #Premium-xs, #Premium-md{
         box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2);
     }
     
