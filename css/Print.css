@@ -11,9 +11,7 @@ body {
     page-break-inside: avoid;
 }
 
-div {
-    page-break-inside: avoid;
-}
+
 
 #keyword{
     margin: auto;
