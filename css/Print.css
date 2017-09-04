@@ -130,10 +130,15 @@ img {
         display: none;
     }
 
-    /* .breadcrumb{
+    .breadcrumb{
         display: none;
-    }*/
-
+    }
+    
+    #car .text{
+        visibility:hidden;
+        display: none;
+    }
+    
     
 }
 
