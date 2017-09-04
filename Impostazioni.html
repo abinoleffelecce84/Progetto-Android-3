@@ -324,9 +324,15 @@
         <script>$(document).ready(function(){
                 $("#change").hide(); 
                 $("#btn-change").click(function(){
-                   $("#change").toggle("high"); 
+                   $("#change").toggle("high");
+                   if($("#adds").is(":visible"))
+                   {
+                        $("#adds").hide();
+                   }
                 });
-            });</script>                
+            });
+        
+        </script>                
     </body>
     
 </html>
