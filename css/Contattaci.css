@@ -38,6 +38,7 @@ body{
 .intro-heading{
     margin-bottom: 25px;
     text-transform: uppercase;
+    text-shadow: 1px 1px #000000;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 50px;
     font-weight: 700;
