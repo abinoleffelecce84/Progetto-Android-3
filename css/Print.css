@@ -100,6 +100,14 @@ img {
         font-size: 15pt;
     }
     
+    .form-group .control-label{
+        font-size: 18px;
+    }
+    
+    .form-group .form-control{
+        font-size: 18px;
+    }
+    
 
 }
 
