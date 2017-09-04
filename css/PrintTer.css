@@ -1,0 +1,40 @@
+@page {
+    size: 210mm 297mm; 
+    margin: 30mm;
+}
+
+body {
+    font-size: 12pt;
+}
+
+p {
+    page-break-inside: avoid;
+}
+
+#tc{
+    visibility: visible;
+}
+
+.carousel-inner {
+    display:none;
+}
+
+div#container {
+    width: auto;
+}
+
+header nav, footer {
+    display: none;
+}
+
+@media print {
+  a[href]:after {
+    content: none !important;
+    }
+    html, body {
+        height: auto;   
+    }
+    
+}
+
+
