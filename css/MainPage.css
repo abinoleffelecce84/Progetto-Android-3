@@ -6,7 +6,7 @@
 
 #newsstaz{
     position: relative;
-    right: 360px;
+    
 }
 
 #staz{
@@ -182,19 +182,16 @@ h1,h2,h3,h4,h5{ /*all titles*/
     }
         
     .custom-image{
-        height: 100%;
-        width: 101%;
-        background: url(../img/slider-2.png);
+        width: 2200px;
         background-position: center center;
         position: fixed;
-        right: 0;
-        top: 46px;
+        left: -200px;
+        top: -250px;
         -webkit-filter: blur(1px);
         -moz-filter: blur(5px);
         -o-filter: blur(5px);
         -ms-filter: blur(5px);
-        filter: blur(3px);
-        
+        filter: blur(3px);   
     }
     
     #fluid{
