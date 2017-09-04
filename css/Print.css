@@ -72,29 +72,32 @@ img {
         page-break-inside: avoid;
         padding: 0;
     }
+    
     .section-heading{
         font-size: 20pt;
     }
-    ol{
-        top:0;
-        bottom: 0;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
+
     #piano{
         font-size: 7pt;
     }
+    
     html, body {
         height: auto;    
     }
+    
     .inner{
         margin: 0;
     }
+    
     
     #modal1, #modal2, #modal3{
         position: absolute;
         z-index: 99999;
         bottom: auto;
+    }
+    
+    fieldset{
+        font-size: 15pt;
     }
     
 
