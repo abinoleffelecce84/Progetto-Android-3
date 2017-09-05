@@ -11,6 +11,17 @@ body {
     page-break-inside: avoid;
 }
 
+
+
+#keyword{
+    margin: auto;
+}
+
+
+.carousel-inner {
+    display:none;
+}
+
 div#container {
     width: auto;
 }
@@ -82,7 +93,7 @@ img {
     }
     
     html, body {
-        height: auto;    
+        height: auto;   
     }
     
     .inner{
@@ -96,19 +107,37 @@ img {
         bottom: auto;
     }
     
+    
     fieldset{
         font-size: 15pt;
     }
     
     .form-group .control-label{
-        font-size: 18px;
+        font-size: 15px;
     }
     
     .form-group .form-control{
-        font-size: 18px;
+        font-size: 15px;
     }
     
+    #welcome-xs{
+        display: none;
+    }
+    
+    #welc-xs-form{
+        display: none;
+    }
 
+    .breadcrumb{
+        display: none;
+    }
+    
+    #car .text{
+        visibility:hidden;
+        display: none;
+    }
+    
+    
 }
 
 

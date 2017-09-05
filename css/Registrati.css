@@ -42,14 +42,15 @@ h6{
 
 .intro-lead-in{
     font-style: italic;
+    text-shadow: 1px 1px #000000;
     line-height: 18px;
     margin-bottom: 25px;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 18px;
 }
 
 .intro-heading{
     margin-bottom: 25px;
+    text-shadow: 1px 1px #000000;
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 50px;
@@ -65,9 +66,9 @@ h6{
     }
     
     .intro-lead-in{
-        font-size: 40px;
+        font-size: 24px;
         font-style: italic;
-        line-height: 40px;
+        line-height: 18px;
     }
     
     .intro-heading{

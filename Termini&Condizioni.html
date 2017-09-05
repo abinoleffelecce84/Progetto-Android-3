@@ -12,6 +12,7 @@
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/MainPage.css" rel="stylesheet">
         <link href="css/Ricerca.css" rel="stylesheet">
+        <link href="css/PrintTer.css" type="text/css" media="print" rel="stylesheet" > 
 
         <!-- Custom Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -22,27 +23,130 @@
     
     <body id="page-top">
         
-        <nav class="navbar navbar-default navbar-fixed-top">
+      <nav class="navbar navbar-default navbar-fixed-top">
              <div class="container">
                  <div class="navbar-header page-scroll">
                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                          <span class="icon-bar"></span>
                          <span class="icon-bar"></span>
-                         <span class="icon-bar"></span>      
+                         <span class="icon-bar"></span>                    
                      </button>
                      <a class="navbar-brand page-scroll" href="Mainpage.html" id="title">WishCar</a>
                  </div>
                  <div class="collapse navbar-collapse" id=".navbar-collapse" id="hidden-collapse">
                      <ul class="nav navbar-nav navbar-right">
+                         
+                         <li class="hidden">
+                             <a href="#page-top"></a>
+                         </li>
+                         
+                         <li>
+                             <a class="page-scroll" href="Mappa.html">Mappa</a>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="Autodisp.html">Auto Disponibili</a>
+                         </li>
+                         <li id="dropdown-dsk">
+                             <div class="dropdown">
+                                <a class="dropbtn" id="myDrop2" onclick="myFunction2()">Servizio</a>
+                                <font class="row" size="1" id="freccia">&#9699</font>
+                                <div id="myDropdown2" class="dropdown-content-form">
+                                    <div class="input-group">
+                                         <div align="center"><a href="Opinioni.html">Opinioni</a></div>
+                                         <div align="center"><a href="Mainpage.html #Tariffe">Tariffe</a></div>
+                                         <div align="center"><a href="Contattaci.html">Contattaci</a></div>
+                                         <div align="center"><a href="HoUnProblema.html">Ho un problema</a></div>
+                                    </div>
+                                </div>
+                             </div>
+                         </li>
+                         <li id="dropdown-mob">
+                            <a id="servizio" href="Mainpage.html #">Servizio</a>
+                             <ul>
+                                <li><a id="servizio" href="Opinioni.html">Opinioni</a></li>
+                                <li><a href="Mainpage.html #Tariffe">Tariffe</a></li>
+                                <li><a href="Contattaci.html">Contatti</a></li>
+                                <li><a href="HoUnProblema.html">Ho un problema</a></li>
+                             </ul>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="Mainpage.html #sudinoi">Su di Noi</a>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="News.html">News</a>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="Mainpage.html #funzionamento">Come Funziona</a>
+                         </li>
+                         <li>
+                             <a class="page-scroll" href="Prenota.html">Prenota</a>
+                         </li>
+                         <li>
+                             <form id="qm-form" class="navbar-form" role="search">
+                                 <fieldset class="text-left" id="checkbox">
+                                         <legend id="checkbox">Effettua ricerca in:</legend>
+                                         <div class="col-xs-11" id="input-box">
+                                             <input id="input" type="checkbox" name="autodisp"/>
+                                                    Auto Disponibili<br>
+                                             <input id="input" type="checkbox" name="mappa"/>
+                                                    Mappa<br>
+                                             <input id="input" type="checkbox" name="news"/>
+                                                    News<br>
+                                             <input id="input" type="checkbox" name="contatti"/>
+                                                    Contatti<br>
+                                         </div>
+                                 </fieldset>
+                                 <div id="searching-xs" class="input-group">
+                                   <input type="text" class="form-control" placeholder="Cerca nel sito...">
+                                   <div class="input-group-btn">
+                                     <a href="Ricerca.html">
+                                        <button id="btn-check" class="btn btn-default" type="button"></button>
+                                     </a>
+                                   </div>
+                                 </div>
+                             </form>
+                         </li>
+                         <li id="dropdown">
+                             <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn" id="myDrop"></button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <form class="form" role="search">
+                                        <input type="text" id="searching" name="password" type="text" placeholder="Cerca nel sito..." class="form-control">
+                                        <div class="input-group">
+                                           <a class="col-xs-1" href="Ricerca.html">
+                                              <button id="btn-vai" class="btn btn-default" type="button">Vai</button>
+                                           </a>
+                                        </div>
+                                    </form>
+                                    <fieldset class="text-left" id="checkbox">
+                                        <legend id="checkbox"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Effettua ricerca in:</legend>
+                                         <div class="col-xs-11" id="input-box">
+                                             <input id="input" type="checkbox" name="autodisp"/>
+                                                    Auto Disponibili<br>
+                                             <input id="input" type="checkbox" name="mappa"/>
+                                                    Mappa<br>
+                                             <input id="input" type="checkbox" name="news"/>
+                                                    News<br>
+                                             <input id="input" type="checkbox" name="contatti"/>
+                                                    Contatti<br>
+                                         </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                         </li>
                          <a href="Accedi.html">
                            <button id="login" class="btn btn-default" type="button"></button>
                          </a>
                      </ul>
                  </div>
              </div>
-        </nav>
-        
+         </nav>
+
         <section id="T&C">
+            <ol class="breadcrumb" id="tc">
+                <li><a href="MainPage.html">Home</a></li>
+                <li><a class="active">Termini&Condizioni</a></li>
+            </ol>
             <div class="container marketing">
                 <div class="row">
                     <div class="col-lg-12 text-left">
@@ -59,9 +163,9 @@
                         "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
                         </p>
                         
-                        <br><br><br>
+                        <br><br><br><br>
                         <hr>
-                        <br><br><br>
+                        <br><br><br><br>
                         
                         <h3><br>
                         Condizione 2
@@ -69,17 +173,17 @@
                         <p class="section-subheading text-muted" align="justify">
                         "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
                         </p>
-                        
-                        <h3><br>
+                    
+                        <h3><br><br><br><br>    
                         Condizione 2.2
                         </h3>
                         <p class="section-subheading text-muted" align="justify">
                         "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
                         </p>
                         
-                        <br><br><br>
+                        <br><br><br><br>
                         <hr>
-                        <br><br><br>
+                        <br><br><br><br>
                         
                         <h3><br>
                         Condizione 3
@@ -111,6 +215,10 @@
                 </div>
             </div>
         </footer>
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/drdown.js"></script>
+        <script src="js/drdown2.js"></script>
     </body>
 </html>
