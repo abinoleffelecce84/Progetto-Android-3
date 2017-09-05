@@ -1,16 +1,11 @@
 body{ /*general view of the webpage*/
     font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    
     overflow-x: hidden;
 }
 
 p{
     font-size: 14px;
     line-height: 1.75;
-}
-
-.carousel-slide{
-    position: fixed;
 }
 
 #intro-lead-in{
@@ -154,13 +149,14 @@ h1,h2,h3,h4,h5{ /*all titles*/
 
 }
 
-@media (min-width:768px){
+@media (min-width:1200px){
     
     #container-sfondo{
         height: 105%;
         width: 105%;
         position: relative;
         right: 35px;
+        top: 550px;
         background-color: bisque;
     }
         
@@ -179,13 +175,24 @@ h1,h2,h3,h4,h5{ /*all titles*/
     
     #fluid{
         position: relative;
-        bottom: 850px;
+        top: 300px;
         color: white;
+        text-shadow: 1px 1px #000000;
     }
     
-}
-
-@media (min-width:1200px){
+    #start{
+        position: relative;
+        top: 440px;
+    }
+    
+    #Intro-md, #Intro-sm{
+        display: none;
+    }
+    
+    #myCarousel{
+        position: relative;
+        bottom: 60px;
+    }
            
     #mobile{
         display: none;
@@ -285,12 +292,6 @@ h1,h2,h3,h4,h5{ /*all titles*/
         display: inline-block;
     }
 
-    #blur{
-        background-color: white;
-        height: 100px;
-        width: 10px;
-    }
-
     .dropdown-content {
         background-color: rgba(10,10,10,0.8);
         position: absolute;
@@ -387,6 +388,55 @@ h1,h2,h3,h4,h5{ /*all titles*/
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+    
+    #container-sfondo{
+        height: 105%;
+        width: 105%;
+        position: relative;
+        right: 35px;
+        top: 550px;
+        background-color: bisque;
+    }
+        
+    .custom-image{
+        width: 2200px;
+        background-position: center center;
+        position: fixed;
+        left: -200px;
+        top: -250px;
+        -webkit-filter: blur(1px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(3px);   
+    }
+    
+    #fluid{
+        position: relative;
+        top: 300px;
+        color: white;
+        text-shadow: 1px 1px #000000;
+    }
+    
+    #Intro-md{
+        position: relative;
+        top: 100px;
+        right: 100px;
+    }
+    
+    #Intro-lg, #Intro-sm{
+        display: none;
+    }
+    
+    #start{
+        position: relative;
+        top: 440px;
+    }
+    
+    #myCarousel{
+        position: relative;
+        bottom: 60px;
+    }
     
     #mobile{
         display: none;
@@ -514,11 +564,6 @@ h1,h2,h3,h4,h5{ /*all titles*/
         display: none;
     }
     
-    #myCarousel{
-        position: relative;
-        top: 50px;
-    }
-    
     #news{
         position: relative;
         top: 50px;
@@ -601,6 +646,55 @@ h1,h2,h3,h4,h5{ /*all titles*/
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+    
+    #container-sfondo{
+        height: 105%;
+        width: 105%;
+        position: relative;
+        right: 35px;
+        top: 550px;
+        background-color: bisque;
+    }
+        
+    .custom-image{
+        width: 2200px;
+        background-position: center center;
+        position: fixed;
+        left: -200px;
+        top: -250px;
+        -webkit-filter: blur(1px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(3px);   
+    }
+    
+    #fluid{
+        position: relative;
+        top: 300px;
+        color: white;
+        text-shadow: 1px 1px #000000;
+    }
+    
+    #Intro-sm{
+        position: relative;
+        top: 100px;
+        right: 260px;
+    }
+    
+    #Intro-lg, #Intro-md{
+        display: none;
+    }
+    
+    #start{
+        position: relative;
+        top: 440px;
+    }
+    
+    #myCarousel{
+        position: relative;
+        bottom: 60px;
+    }
     
     #mobile{
         display: none;
@@ -719,11 +813,6 @@ h1,h2,h3,h4,h5{ /*all titles*/
     
     .navbar-default .nav li a{
         margin: 0 1px;
-    }
-  
-    #myCarousel{
-        position: relative;
-        top: 100px;
     }
     
     #news{
