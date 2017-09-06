@@ -1,5 +1,6 @@
 body{ /*general view of the webpage*/
     font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: bisque;
     overflow-x: hidden;
 }
 
@@ -116,7 +117,7 @@ h1,h2,h3,h4,h5{ /*all titles*/
     width: auto;
 }
 
-@media (max-width: 1920px) { 
+@media (max-width: 1920px){ 
     
     .carousel-caption h1{ 
         font-size: 120px;
@@ -135,7 +136,7 @@ h1,h2,h3,h4,h5{ /*all titles*/
     
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1280px){
     
     .carousel-caption h1{
         font-size: 80px;
@@ -151,49 +152,11 @@ h1,h2,h3,h4,h5{ /*all titles*/
 
 @media (min-width:1200px){
     
-    #container-sfondo{
-        height: 105%;
-        width: 105%;
-        position: relative;
-        right: 35px;
-        top: 550px;
-        background-color: bisque;
-    }
-        
-    .custom-image{
-        width: 2200px;
-        background-position: center center;
-        position: fixed;
-        left: -200px;
-        top: -250px;
-        -webkit-filter: blur(1px);
-        -moz-filter: blur(5px);
-        -o-filter: blur(5px);
-        -ms-filter: blur(5px);
-        filter: blur(3px);   
-    }
-    
-    #fluid{
-        position: relative;
-        top: 300px;
-        color: white;
-        text-shadow: 1px 1px #000000;
-    }
-    
-    #start{
-        position: relative;
-        top: 440px;
-    }
-    
-    #Intro-md, #Intro-sm{
-        display: none;
-    }
-    
     #myCarousel{
         position: relative;
-        bottom: 60px;
+        top: 50px;
     }
-           
+    
     #mobile{
         display: none;
     }
@@ -212,7 +175,7 @@ h1,h2,h3,h4,h5{ /*all titles*/
         display: none;
     }
     
-    #myDrop2 { /*scritta*/
+    #myDrop2{ /*scritta*/
         margin: auto;
         background-color: transparent;
         padding: 16px;
@@ -226,7 +189,7 @@ h1,h2,h3,h4,h5{ /*all titles*/
         text-decoration: none;
     }
     
-    .dropdown-content-form {
+    .dropdown-content-form{
         background-color: #222;
         position: absolute;
         top: 40px;
@@ -278,7 +241,7 @@ h1,h2,h3,h4,h5{ /*all titles*/
         background-color: #222;
     }
 
-    #myDrop {
+    #myDrop{
         margin: auto;
         background-color: #222;
         padding: 16px;
@@ -292,7 +255,7 @@ h1,h2,h3,h4,h5{ /*all titles*/
         display: inline-block;
     }
 
-    .dropdown-content {
+    .dropdown-content{
         background-color: rgba(10,10,10,0.8);
         position: absolute;
         top: 51px;
@@ -310,7 +273,7 @@ h1,h2,h3,h4,h5{ /*all titles*/
         background-image:url(../img/qm.png);
     }
 
-    #myDrop:focus {
+    #myDrop:focus{
         background-image:url(../img/qm.png);
     }
     
@@ -389,53 +352,9 @@ h1,h2,h3,h4,h5{ /*all titles*/
 
 @media (min-width: 992px) and (max-width: 1199px) {
     
-    #container-sfondo{
-        height: 105%;
-        width: 105%;
-        position: relative;
-        right: 35px;
-        top: 550px;
-        background-color: bisque;
-    }
-        
-    .custom-image{
-        width: 2200px;
-        background-position: center center;
-        position: fixed;
-        left: -200px;
-        top: -250px;
-        -webkit-filter: blur(1px);
-        -moz-filter: blur(5px);
-        -o-filter: blur(5px);
-        -ms-filter: blur(5px);
-        filter: blur(3px);   
-    }
-    
-    #fluid{
-        position: relative;
-        top: 300px;
-        color: white;
-        text-shadow: 1px 1px #000000;
-    }
-    
-    #Intro-md{
-        position: relative;
-        top: 100px;
-        right: 100px;
-    }
-    
-    #Intro-lg, #Intro-sm{
-        display: none;
-    }
-    
-    #start{
-        position: relative;
-        top: 440px;
-    }
-    
     #myCarousel{
         position: relative;
-        bottom: 60px;
+        top: 50px;
     }
     
     #mobile{
@@ -647,53 +566,9 @@ h1,h2,h3,h4,h5{ /*all titles*/
 
 @media (min-width: 768px) and (max-width: 991px) {
     
-    #container-sfondo{
-        height: 105%;
-        width: 105%;
-        position: relative;
-        right: 35px;
-        top: 550px;
-        background-color: bisque;
-    }
-        
-    .custom-image{
-        width: 2200px;
-        background-position: center center;
-        position: fixed;
-        left: -200px;
-        top: -250px;
-        -webkit-filter: blur(1px);
-        -moz-filter: blur(5px);
-        -o-filter: blur(5px);
-        -ms-filter: blur(5px);
-        filter: blur(3px);   
-    }
-    
-    #fluid{
-        position: relative;
-        top: 300px;
-        color: white;
-        text-shadow: 1px 1px #000000;
-    }
-    
-    #Intro-sm{
-        position: relative;
-        top: 100px;
-        right: 260px;
-    }
-    
-    #Intro-lg, #Intro-md{
-        display: none;
-    }
-    
-    #start{
-        position: relative;
-        top: 440px;
-    }
-    
     #myCarousel{
         position: relative;
-        bottom: 60px;
+        top: 100px;
     }
     
     #mobile{
@@ -934,19 +809,17 @@ h1,h2,h3,h4,h5{ /*all titles*/
         left: 50px;
     }
     
-    #footer{
-        width: 850px;
-    }
-    
 }
 
 @media (min-width: 100px) and (max-width: 767px) {
-    #fluid, #contenitore, #br{
+
+    #fluid, #contenitore, #container-sfondo{
         display: none;
     }
     
     #container-sfondo{
         background-color: bisque;
+        width: 105%;
     }
     
     #dropdown-dsk{
@@ -1059,21 +932,15 @@ h1,h2,h3,h4,h5{ /*all titles*/
         box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2);
     }
     
-    #newsstaz{
-        position: relative;
-        left: 20px;
-        top: 20px;
-    }
-    
-    #footer{
-        width: 850px;
-        position: relative;
-        right: 15px;
-    }
-    
 }
 
 @media (min-width: 500px) and (max-width: 767px){
+    
+    #welc-form{
+        font-size: 30px;
+        position: relative;
+        bottom: 100px;
+    }
     
     #accedi-xs, #prenota-xs, #guida-xs{
         display: none;
@@ -1083,29 +950,14 @@ h1,h2,h3,h4,h5{ /*all titles*/
         display: none;
     }
     
-    #body{
-        position: relative;
-        bottom: 110px;
-    }
-    
-    #welc-form{
-        font-size: 30px;
-        position: relative;
-        bottom: 100px;
-    }
-    
 }
 
 @media (min-width: 100px) and (max-width: 499px){
+    
     #welc-form{
         font-size: 30px;
         position: relative;
         bottom: 100px;
-    }
-    
-    #body{
-        position: relative;
-        bottom: 200px;
     }
     
     #accedi-md, #prenota-md, #guida-md{
@@ -1118,17 +970,17 @@ h1,h2,h3,h4,h5{ /*all titles*/
     
 }
 
-section{ /*Only the section*/
+section{
     padding: 110px 0;
 }
 
-section h2.section-heading{ /*services title*/
+section h2.section-heading{
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 40px;
 }
 
-section h3.section-subheading{ /*subtitle of services*/
+section h3.section-subheading{
     margin-bottom: 75px;
     text-transform: none;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -1193,10 +1045,4 @@ img::selection{
 
 img::moz-selection{
     background: 0 0;
-}
-
-#tc{
-    text-align: center;
-    margin-top: -60px;
-    
 }
