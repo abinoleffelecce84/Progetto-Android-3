@@ -6,7 +6,7 @@ header{
     text-align: center;
     color: #ffffff;
     background-attachment: scroll;
-    background-image: url(../img/mappa.jpg);
+    background-image: url(../img/mappaintro.png);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -36,6 +36,16 @@ header{
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
+}
+
+#image-staz{
+    position: relative;
+    top: 90px;
+}
+
+#portfolio{
+    position: relative;
+    top: 100px;
 }
 
 @media(min-width:768px){
@@ -69,19 +79,30 @@ header{
 }
 
 @media(min-width: 400px) and (max-width: 767px){
-    
-    #portfolio{
+
+    header{
         position: relative;
-        top: 325px;
+        top: 45px;
+    }
+    
+    #breadcrumb{
+        position: relative;
+        top: 40px;
     }
     
 }
 
 @media(min-width: 269px) and (max-width: 399px){
     
-    #portfolio{
+    header{
         position: relative;
-        top: 325px;
+        top: 40px;
+    }
+
+    
+    #breadcrumb{
+        position: relative;
+        
     }
     
 }
