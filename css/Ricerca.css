@@ -171,8 +171,23 @@ body{
     
 }
 
+@media (min-width: 600px) and (max-width: 767px){
+    
+    #ricerca{
+        position: relative;
+        top: 20px;
+    }
+    
+}
+
 
 @media (min-width: 400px) and (max-width: 767px) {
+    
+    #ricerca{
+        position: relative;
+        bottom: 0px;
+        
+    }
     
     #container{
         position: relative;
@@ -197,6 +212,24 @@ body{
         right: 9%;
     }
 
+}
+
+@media (min-width: 500px) and (max-width: 600px){
+    
+    #ricerca{
+        position: relative;
+        bottom: 50px;
+    }
+    
+}
+
+@media (min-width: 400px) and (max-width: 500px){
+    
+    #ricerca{
+        position: relative;
+        bottom: 50px;
+    }
+    
 }
 
 @media (min-width: 269px) and (max-width: 399px){

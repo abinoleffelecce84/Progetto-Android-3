@@ -68,6 +68,24 @@ header{
     
 }
 
+@media(min-width: 400px) and (max-width: 767px){
+    
+    #portfolio{
+        position: relative;
+        top: 325px;
+    }
+    
+}
+
+@media(min-width: 269px) and (max-width: 399px){
+    
+    #portfolio{
+        position: relative;
+        top: 325px;
+    }
+    
+}
+
 .breadcrumb{
     background: #222;
     border-radius: 0;
