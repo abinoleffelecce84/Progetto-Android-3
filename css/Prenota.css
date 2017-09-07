@@ -38,25 +38,63 @@ header{
 }
 
 @media(min-width:768px){
-
+    
     .intro-text{
         padding-top: 300px;
         padding-bottom: 200px;
     }
-
+    
     .intro-lead-in{
         font-size: 40px;
         font-style: italic;
         line-height: 40px;
     }
-
+    
     .intro-heading{
         margin-bottom: 50px;
         font-size: 75px;
         font-weight: 700px;
         line-height: 75px;
     }
+    
+}
 
+@media(min-width: 1200px){
+    
+    #image-md{
+        display: none;
+    }
+    
+}
+
+@media(min-width: 400px) and (max-width: 767px){
+
+    header{
+        position: relative;
+        top: 45px;
+    }
+    
+    #breadcrumb{
+        position: relative;
+        top: 40px;
+    }
+    
+}
+
+@media(min-width: 269px) and (max-width: 399px){
+    
+    header{
+        position: relative;
+        top: 40px;
+    }
+
+    
+    #breadcrumb{
+        position: relative;
+        padding: 10px 15px;
+        
+    }
+    
 }
 
 .breadcrumb{

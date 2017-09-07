@@ -129,6 +129,7 @@ header{
     border: transparent;
     text-transform: uppercase;
     display: flex;
+    text-decoration: none;
 }
 
 @media (max-width: 499px) and (min-width: 100px){
@@ -165,4 +166,18 @@ header{
 
 #form{
     top: 50px;    
+}
+
+@media (min-width: 100px) and (max-width: 599px){
+    
+    #pag-form {
+        font-size: 20px;
+        position: relative;
+        bottom: 30px;
+    }
+    
+    .intro-heading{
+        font-size: 30px;
+    }
+    
 }

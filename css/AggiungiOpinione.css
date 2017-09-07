@@ -6,7 +6,7 @@ header{
     text-align: center;
     color: #ffffff;
     background-attachment: scroll;
-    background-image: url(../img/header-bg.png);
+    background-image: url(../img/opinion.png);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -56,6 +56,44 @@ header{
         font-size: 75px;
         font-weight: 700px;
         line-height: 75px;
+    }
+    
+}
+
+@media(min-width: 1200px){
+    
+    #image-md{
+        display: none;
+    }
+    
+}
+
+@media(min-width: 400px) and (max-width: 767px){
+
+    header{
+        position: relative;
+        top: 45px;
+    }
+    
+    #breadcrumb{
+        position: relative;
+        top: 40px;
+    }
+    
+}
+
+@media(min-width: 269px) and (max-width: 399px){
+    
+    header{
+        position: relative;
+        top: 40px;
+    }
+
+    
+    #breadcrumb{
+        position: relative;
+        padding: 10px 15px;
+        
     }
     
 }
