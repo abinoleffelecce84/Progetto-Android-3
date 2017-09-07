@@ -2,16 +2,39 @@ body{
     background-color: bisque;
 }
 
-#intro-text{
-    text-shadow: 1px 1px #000000;
+header{
+    text-align: center;
+    color: #ffffff;
+    background-attachment: scroll;
+    background-image: url(../img/Ricerca.png);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
 }
 
-#intro-lead-in{
+.intro-text{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.intro-lead-in{
     font-style: italic;
     line-height: 18px;
     margin-bottom: 25px;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
+}
+
+.intro-heading{
+    margin-bottom: 25px;
+    text-shadow: 1px 1px #000000;
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
 }
 
 .breadcrumb{
@@ -62,18 +85,62 @@ body{
     transition: all ease .5s;
 }
 
-@media(max-width:768px){
+@media(min-width:768px){
     
-    #intro-text{
-        text-shadow: 1px 1px #000000;
+    .intro-text{
+        padding-top: 300px;
+        padding-bottom: 200px;
+    }
+    
+    .intro-lead-in{
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+    }
+    
+    .intro-heading{
+        margin-bottom: 50px;
+        font-size: 75px;
+        font-weight: 700px;
+        line-height: 75px;
+    }
+    
+}
+
+@media(min-width: 1200px){
+    
+    #image-md{
+        display: none;
+    }
+    
+}
+
+@media(min-width: 400px) and (max-width: 767px){
+
+    header{
+        position: relative;
+        top: 45px;
+    }
+    
+    #breadcrumb{
+        position: relative;
+        top: 40px;
+    }
+    
+}
+
+@media(min-width: 269px) and (max-width: 399px){
+    
+    header{
+        position: relative;
+        top: 40px;
     }
 
-    #intro-lead-in{
-        font-style: italic;
-        line-height: 18px;
-        margin-bottom: 25px;
-        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 18px;
+    
+    #breadcrumb{
+        position: relative;
+        padding: 10px 15px;
+        
     }
     
 }
