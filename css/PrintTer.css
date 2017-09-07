@@ -11,10 +11,6 @@ p {
     page-break-inside: avoid;
 }
 
-#tc{
-    visibility: visible;
-}
-
 .carousel-inner {
     display:none;
 }
