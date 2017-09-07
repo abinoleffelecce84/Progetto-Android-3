@@ -14,6 +14,8 @@ header{
     background-size: cover;
 }
 
+
+
 .intro-text{
     padding-top: 100px;
     padding-bottom: 50px;
@@ -26,7 +28,7 @@ header{
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
 	color: white;
-    text-shadow: 1px 1px #000000;
+    text-shadow: 2px 2px #000000;
 }
 
 .intro-heading{
@@ -37,7 +39,7 @@ header{
     font-weight: 700;
     line-height: 50px;
 	color: white;
-    text-shadow: 1px 1px #000000;
+    text-shadow: 2px 2px #000000;
 }
 
 .breadcrumb{
@@ -80,23 +82,90 @@ footer{
 }
 
 @media(min-width:768px){
-
+    
     .intro-text{
         padding-top: 300px;
         padding-bottom: 200px;
     }
-
+    
     .intro-lead-in{
         font-size: 40px;
         font-style: italic;
         line-height: 40px;
     }
-
+    
     .intro-heading{
         margin-bottom: 50px;
         font-size: 75px;
         font-weight: 700px;
         line-height: 75px;
     }
+    
+}
 
+@media(min-width: 1200px){
+    
+    #image-md{
+        display: none;
+    }
+    
+}
+
+@media(min-width: 400px) and (max-width: 767px){
+
+    header{
+        position: relative;
+        top: 45px;
+    }
+    
+    #breadcrumb{
+        position: relative;
+        top: 40px;
+    }
+    .row{
+        margin-left: auto;
+        margin-right: auto;
+}
+    
+}
+
+@media(min-width: 269px) and (max-width: 399px){
+    
+    header{
+        position: relative;
+        top: 40px;
+    }
+
+    
+    #breadcrumb{
+        position: relative;
+        padding: 10px 15px;
+        
+    }
+    .row{
+        margin-left: auto;
+        margin-right: auto;
+}
+    
+}
+
+@media (min-width: 100px) and (max-width: 599px){
+    
+    #pag-form {
+        font-size: 20px;
+        position: relative;
+        bottom: 30px;
+    }
+    
+    .intro-heading{
+        font-size: 30px;
+    }
+    section h2.section-heading{
+        font-size: 30px;
+    }
+    .row{
+        margin-left: auto;
+        margin-right: auto;
+}
+    
 }
