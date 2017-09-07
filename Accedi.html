@@ -164,27 +164,29 @@
 
                 <br><br>
                 <fieldset>
-                    <div class="col-lg-12">
-                        <div class="form-group text-left">
-                            <label class="col-xs-3 control-label" for="name">E-Mail*</label>
-                            <div class="col-xs-9" id="form-label">
-                                <input id="email" name="name" type="text" placeholder="E-Mail" class="form-control">
+                    <form>
+                        <div class="col-lg-12">
+                            <div class="form-group text-left">
+                                <label class="col-xs-3 control-label" for="name">E-Mail*</label>
+                                <div class="col-xs-9" id="form-label">
+                                    <input id="email" name="name" type="text" placeholder="E-Mail" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-group text-left">
+                                <label for="password" class="col-xs-3 control-label" for="name">Password*</label>
+                                <div class="col-xs-9" id="form-label">
+                                    <input required type="password" id="password" name="password" placeholder="Password" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-8 col-xs-offset-3">
+                                    <a href="Benvenuto.html">
+                                        <button type="submit" class="btn btn-primary btn-md" id="buttonsubmit">Login</button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="form-group text-left">
-                            <label for="password" class="col-xs-3 control-label" for="name">Password*</label>
-                            <div class="col-xs-9" id="form-label">
-                                <input type="password" id="password" name="password" type="text" placeholder="Password" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-xs-8 col-xs-offset-3">
-                                <a href="Benvenuto.html">
-                                    <button type="submit" class="btn btn-primary btn-md" id="buttonsubmit">Login</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    </form>
                </fieldset>
            </div>
         </div>
@@ -192,19 +194,20 @@
         <br><br><br><br><br><br><br><br><br><br><br><br>
         
         <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-4">
-              <span class="copyright">Copyright © 2017 nome dell'azienda</span>
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm-4">
+                      <span class="copyright">Copyright © 2017 WishCar</span>
+                  </div>
+                  <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                      <li class="col-lg-4"><a class="Map" href="Sitemap.html">Sitemap</a></li>
+                      <li class="col-lg-4"><a class="Contatti" href="Contattaci.html">Contatti</a></li>
+                      <li class="col-lg-4"><a class="T&C" href="Termini&Condizioni.html">T&C</a></li>
+                    </ul>
+                  </div>
+                </div>
             </div>
-            <div class="col-md-4">
-              <ul class="list-inline quicklinks">
-                <li class="col-lg-4"><a class="Map" href="sitemap.html">Sitemap</a></li>
-                <li class="col-lg-4"><a class="Contacts" href="Contattaci.html">Contatti</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
         </footer>
     
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
