@@ -1,1 +1,1 @@
-Progetto-Android-3
+Made by Mariagiovanna Czarnecki and Paolo Vedorin.
